@@ -22,7 +22,6 @@ public class current{{
 
 	
 		try {
-		ùstring 
 		String url = "api.openweathermap.org/data/2.5/weather?q={city name}&appid=f044a8c15896675617344a49813d1a16";
 		URLConnection openConnection = new URL(url).openConnection();
 	}
