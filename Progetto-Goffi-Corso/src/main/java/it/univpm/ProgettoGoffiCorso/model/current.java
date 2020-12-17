@@ -18,17 +18,18 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
 
-public class current{
+public class current{{
 
-	public static void main(String[] args) {
+	
 		try {
+		ùstring 
 		String url = "api.openweathermap.org/data/2.5/weather?q={city name}&appid=f044a8c15896675617344a49813d1a16";
 		URLConnection openConnection = new URL(url).openConnection();
 	}
 		catch(Exception e) {
 			System.out.println("Errore.");
 		}
-}
+	}
 }
 			
 
