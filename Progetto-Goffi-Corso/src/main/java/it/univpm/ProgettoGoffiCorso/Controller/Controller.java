@@ -35,11 +35,7 @@ import org.json.simple.parser.ParseException;
     public class Controller {{
         //Creo richiesta di tipo http per PREVISIONI ATTUALI
         try {
-            
-
- 
-
-            String url = "api.openweathermap.org/data/2.5/weather?q=Ancona&appid=f044a8c15896675617344a49813d1a16";
+            String url = "api.openweathermap.org/data/2.5/weather?q={Monsano}&appid={9749a54af40a5c60170358c708358ed}";
             URLConnection openConnection = new URL(url).openConnection();
             InputStream in = openConnection.getInputStream();
             //Risposta da parte del server
