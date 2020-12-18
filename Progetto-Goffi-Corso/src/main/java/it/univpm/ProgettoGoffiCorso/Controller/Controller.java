@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import java.util.Scanner;
 
 
 import java.io.*;
@@ -28,26 +29,41 @@ import org.json.simple.parser.ParseException;
 	public class Controller {{
 		//Creo richiesta di tipo http per PREVISIONI ATTUALI
 		try {
+			
 
-			String url = "api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}";
+			String url = "api.openweathermap.org/data/2.5/weather?q=Ancona&appid=f044a8c15896675617344a49813d1a16";
 			URLConnection openConnection = new URL(url).openConnection();
 			InputStream in = openConnection.getInputStream();
 			//Risposta da parte del server
+			String risposta = new Scanner(in).next();
+			BufferedWriter dati = new BufferedWriter(new FileWriter ("dati.txt"));
+			while(risposta.isEmpty() == false) {
+				dati.write(risposta);}
 			
+				dati.close();
 			
-			String data = "";
-			String line = "";
-			
-				
-				InputStreamReader inR = new InputStreamReader( in ); 
-				BufferedReader buf = new BufferedReader( inR );
+				//InputStreamReader inR = new InputStreamReader( in ); 
+				//BufferedReader buf = new BufferedReader( writer );
+				/*
 				while((line = buf.readLine()) != null) {
 					data += line;
 					System.out.println(line);
+				}*/
+				in.close();
 				
-			}}
-		finally {
-			in.close();
+		
 		}
-			}}
+		catch(IOException e) {
+			System.out.println("Errore nella lettura.");
+			System.out.println(e);
+		}
+		
+		JSONObject obj = new JSONObject();
+		System.out.println("OK");
+		}
+		
+		
+		}
+			
+
 
