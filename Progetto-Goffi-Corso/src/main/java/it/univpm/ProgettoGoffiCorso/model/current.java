@@ -14,10 +14,10 @@ import java.nio.file.Paths;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
-import org.json.simple.parser.ParseException;
+
 
 public class current  {{
-	String url = "api.openweathermap.org/data/2.5/weather?q=Monsano&appid=9749a54af40a5c60170358c708358ed";
+	/*String url = "api.openweathermap.org/data/2.5/weather?q=Monsano&appid=9749a54af40a5c60170358c708358ed";
 	try {		
 		URLConnection openConnection = new URL(url).openConnection();
 		InputStream in = openConnection.getInputStream();
@@ -41,7 +41,7 @@ public class current  {{
 		E.printStackTrace();
 	} catch (Exception E1) {
 		E1.printStackTrace();
-	}
+	}*/
 }
 }
 			

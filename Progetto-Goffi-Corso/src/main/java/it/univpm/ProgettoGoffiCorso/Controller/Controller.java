@@ -23,40 +23,58 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
  
-
+import org.json.ParseException.*;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
-import org.json.simple.parser.ParseException;
 	@RestController
 	public class Controller {
 		private static URLConnection connessione;
 		
 		
-		public static void main(String[] args) {
+		public static /*JSONObject*/void chiamataAPI() throws Exception{
+		//public static void main(String[] args) {
 		
 			String key = "f044a8c15896675617344a49813d1a16";
 			String città = "Ancona";
 			// TODO Auto-generated method stub
 			try {
-				StringBuilder result = new StringBuilder();
+				//StringBuilder result = new StringBuilder();
+				String result = "";
+				
 				URL url = new URL ("api.openweathermap.org/data/2.5/weather?q="+ città + "&appid="+ key);
 				connessione = url.openConnection();
+				int tempo = connessione.getConnectTimeout();
+				System.out.println(tempo);
 				BufferedReader rd = new BufferedReader (new InputStreamReader(connessione.getInputStream()));
 				String line;
 				while((line = rd.readLine()) != null) {
-					result.append(line);
+					result += line;
 				}
 				rd.close();
-				System.out.println(result);
+				System.out.println("Dati scaricati:" +result);
 				//int lung = connessione.getContentLength();
-				int tempo= connessione.getConnectTimeout();
-				System.out.println(tempo);
-			} catch(IOException e) {
-				e.printStackTrace();
-			}
+				//int tempo= connessione.getConnectTimeout();
+				//System.out.println(tempo);
+				JSONObject.P = (JSONObject) JSONValue.parseWithException(result);
+				System.out.println("JSONObject scaricato: "+ JSONObject.P);
+				
 
-		}}
+			} catch(Exception e) {
+				System.out.println("Errore"+e);
+			}
+			//return JSONObject.P.toString();
+			}
+			
+			
+
+		}
+		/*@GetMapping("/valore")
+		public ResponseEntity <Object> getPressure(@RequestParam String cityName) {
+			return new JSONObject.P;}
+		}*/
+		
+	
 
 	
 
