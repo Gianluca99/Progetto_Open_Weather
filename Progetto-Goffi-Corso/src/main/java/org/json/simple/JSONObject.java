@@ -7,9 +7,10 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class JSONObject {
-	public static JSONObject P;
+	
+	public static JSONObject main;
 	public JSONObject() {
-		this.P = new JSONObject();
+		this.main = new JSONObject();
 	}
 	
 	
