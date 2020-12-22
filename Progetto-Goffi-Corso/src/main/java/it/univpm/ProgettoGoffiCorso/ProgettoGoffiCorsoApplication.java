@@ -10,6 +10,7 @@ public class ProgettoGoffiCorsoApplication {
 
 	public static void main(String[] args) throws Exception{
 		SpringApplication.run(ProgettoGoffiCorsoApplication.class, args);
+		
 		it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI();
 	}
 
