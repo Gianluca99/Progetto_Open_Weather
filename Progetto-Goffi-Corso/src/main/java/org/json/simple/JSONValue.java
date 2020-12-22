@@ -1,4 +1,5 @@
 package org.json.simple;
+import java.io.FileReader;
 import java.util.Map;
 
 import org.json.ParseException.java.*;
@@ -10,8 +11,9 @@ public class JSONValue {
 
 	public static void parseWithException(String data) {
 		// TODO Auto-generated method stub
-		//data=Map.class.toString();
-		//return data;
+		//JSONParser parser = new JSONParser(new FileReader("dati.json"));
+	
+		
 		
 		
 

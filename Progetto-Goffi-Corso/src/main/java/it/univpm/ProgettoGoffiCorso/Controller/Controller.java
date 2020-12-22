@@ -1,8 +1,10 @@
 package it.univpm.ProgettoGoffiCorso.Controller;
+import org.json.*;
 import java.util.List;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import org.springframework.web.bind.annotation.RestController;
-
+import org.json.simple.JSONObject;
 import jdk.internal.org.jline.reader.Parser;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +28,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.ParseException;
 
 import org.apache.tomcat.util.json.JSONParser;
 import org.json.*;
@@ -43,7 +46,8 @@ import org.json.simple.JSONValue;
 		public static void chiamataAPI() throws Exception{
 		
 			String key = "f044a8c15896675617344a49813d1a16";
-			String città = "Ancona";
+			String città = "Roma";
+			
 			
 			// TODO Auto-generated method stub
 			try {
@@ -63,11 +67,36 @@ import org.json.simple.JSONValue;
 				connessione.setConnectTimeout(1000);
 				System.out.println("Dati correttamente salvati sul file dati.");
 				
+				JSONParser parser = new JSONParser(new FileReader("dati.txt"));
+				Object API = parser.parse();
+				JSONObject.obj = (JSONObject) API;
+				//double pressure = (double)  JSONObject.obj.
+				
+				
+				
+				
+				
 				/*JSONParser jsonParser = new JSONParser(result);
 				
 				JSONObject.P = jsonParser.parse();
 				System.out.println("JSONObject scaricato: "+ JSONObject.P);*/
 			
+				/*JSONObject json = new JSONObject(result);  
+				System.out.println(json.toString());
+				double Pressure = JSONObject.obj.*/
+				
+				/*Scanner file_input = new Scanner(new BufferedReader(new FileReader("dati.txt")));	  
+				String str = file_input.nextLine();
+				JSONParser parser = new JSONParser(str);  
+				JSONObject.obj= (JSONObject) parser.parse();
+				System.out.println("JSONObject letto: "+ JSONObject.obj);
+				file_input.close();*/
+				
+				//for(int i=0; i<org.json.simple.JSONArray.getLunghezza(); i++) {
+				//	JSONObject.obj=JSONArray.array.getJSONObject(i);
+				//}
+				
+				
 				
 				
 				
@@ -80,12 +109,16 @@ import org.json.simple.JSONValue;
 				//JSONObject.P = (JSONObject) JSONValue.parseWithException(result);
 				//System.out.println("JSONObject scaricato: "+ JSONObject.P);
 				
-			}catch(MalformedURLException e) {
-				System.out.println(e);
+				
+				} catch (IOException e) {
+					e.printStackTrace();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				
 			}
-		}
 	}
-	
+			
 	
 
 	
