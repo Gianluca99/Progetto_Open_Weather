@@ -9,6 +9,8 @@ import it.univpm.ProgettoGoffiCorso.Controller.Controller;
 public class ProgettoGoffiCorsoApplication {
 
 	public static void main(String[] args) throws Exception{
+		String nomeCittà;
+		//System.out.println("Inserisci la città:");
 		SpringApplication.run(ProgettoGoffiCorsoApplication.class, args);
 		
 		it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI();
