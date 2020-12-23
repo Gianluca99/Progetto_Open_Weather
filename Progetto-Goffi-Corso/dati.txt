@@ -1,3 +1,15 @@
 
-Città:Rome
-Pressione corrente: 1010.0
+Città:Monsano
+Pressione corrente: 1023.0
+
+Città:Provincia di Ancona
+Pressione corrente: 1023.0
+
+Città:Falconara Marittima
+Pressione corrente: 1023.0
+
+Città:Bologna
+Pressione corrente: 1023.0
+
+Città:New York
+Pressione corrente: 1030.0

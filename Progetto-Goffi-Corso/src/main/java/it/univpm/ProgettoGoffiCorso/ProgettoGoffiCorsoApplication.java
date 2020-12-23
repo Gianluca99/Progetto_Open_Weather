@@ -1,5 +1,7 @@
 package it.univpm.ProgettoGoffiCorso;
 
+import java.util.Scanner;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,11 +11,19 @@ import it.univpm.ProgettoGoffiCorso.Controller.Controller;
 public class ProgettoGoffiCorsoApplication {
 
 	public static void main(String[] args) throws Exception{
-		String nomeCittà;
-		//System.out.println("Inserisci la città:");
 		SpringApplication.run(ProgettoGoffiCorsoApplication.class, args);
+		Scanner in = new Scanner (System.in);
+	
 		
-		it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI();
-	}
+		System.out.println("Inserisci la Città:");
+		String CityName = in.nextLine();
+		//in.close();
+		try {
+		it.univpm.ProgettoGoffiCorso.model.Current.PressioneAttuale(CityName);
+		}
+		catch (Exception e) {
+			System.out.print(e);
+		}
+			}
 
 }
