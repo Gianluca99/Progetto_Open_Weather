@@ -19,11 +19,18 @@ public class ProgettoGoffiCorsoApplication {
 		String CityName = in.nextLine();
 		//in.close();
 		try {
-		it.univpm.ProgettoGoffiCorso.model.Current.PressioneAttuale(CityName);
-		}
-		catch (Exception e) {
+			it.univpm.ProgettoGoffiCorso.model.Current.PressioneAttuale(CityName);
+			}
+			catch (Exception e) {
+				System.out.print(e);
+			}
+		
+		try {
+			it.univpm.ProgettoGoffiCorso.model.Forecast.PressioneFutura(CityName);
+		}catch (Exception e) {
 			System.out.print(e);
 		}
+	
 			}
 
 }

@@ -32,10 +32,10 @@ public class Current {
 			e.printStackTrace();
 		}
 		//vado a selezionare il JSONObject "main" dove ho la pressione attuale
-			Map<String, Object> APImap 	= com.google.gson.map.Mapping.jsonToMap(pressioneAttuale.toString());
-			Map<String, Object> MainMap = com.google.gson.map.Mapping.jsonToMap(APImap.get("main").toString());
+			Map<String, Object> APImap 	= com.google.gson.parsing.CurrentParsing.jsonToMap(pressioneAttuale.toString());
+			Map<String, Object> MainMap = com.google.gson.parsing.CurrentParsing.jsonToMap(APImap.get("main").toString());
 			//double Pressure = (double) MainMap.get("pressure"); //dovrei avere il valore della pressione 
-			ScritturaFile_current(pressioneAttuale, APImap, MainMap);
+			ScritturaFileCurrent(pressioneAttuale, APImap, MainMap, città);
 		
 	}
 	/**
@@ -50,7 +50,7 @@ public class Current {
 	 *  
 	 *  @exception IOException
 	 * */
-	public static void ScritturaFile_current (String dati, Map<String, Object> JsonT,  Map<String, Object> main) {
+	public static void ScritturaFileCurrent (String dati, Map<String, Object> JsonT,  Map<String, Object> main, String città) {
 		File writer = new File("dati.txt");
 		try{
 			  if(!writer.exists()){
@@ -61,7 +61,7 @@ public class Current {
 			       FileWriter fileWriter = new FileWriter(writer, true);
 
 			       BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);	
-			       bufferedWriter.write("\nCittà:"+ JsonT.get("name")+"\nPressione corrente: "+ main.get("pressure")+"\n");
+			       bufferedWriter.write("\nLa pressione attuale a "+ città+" vale: "+ main.get("pressure")+"\n");
 			       bufferedWriter.close();
 			       System.out.println("Pressione aggiunta al file!");
 			     
