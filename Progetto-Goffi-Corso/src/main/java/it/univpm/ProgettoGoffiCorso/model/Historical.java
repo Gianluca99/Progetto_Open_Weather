@@ -14,7 +14,16 @@ public class Historical {
 	
 		return lat;
 	}
-
+	
+	
+/**
+ * viene richiamato il metodo per fornire le coordinate della città scelta dall'utente, quello per la conversione della data in unità UNIIX
+ * entrambi necessari per effettuare la chiamata all'API che fornisce i dati storici 
+ * 
+ *  @param cityName 
+ *  @param data --> data temporale da cui far partire lo storico dei dati
+ * 
+ */
 	public static void Storico(String cityName, String data) {
 		String  dt="";
 		String coord_API ="";

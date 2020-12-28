@@ -18,7 +18,13 @@ public class HistoricalParsing {
 	static double lat;
 	static double lon;
 	
-	
+	/**
+	 * conversione da file json a ArrayList di tipo CoordinateGeografiche
+	 * 
+	 * @param dati	 --> sringa che contiene il json preso dalla chiamata API
+	 * @param città  --> nome della città inserita dall'utente 
+	 * 
+	 * */
 	public static void ParsingCoord (String dati, String città ){
 		//il file scaricato è un JSONArrey e non un oggetto , bisogna fare parsing diverso
 		

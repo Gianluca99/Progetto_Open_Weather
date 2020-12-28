@@ -20,7 +20,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import com.google.gson.*;
 import com.google.gson.reflect.*;
-@RestController
+
 public class Controller {
 	private static URLConnection connessione;
 		
@@ -31,6 +31,8 @@ public class Controller {
 	 * @param cityName
 	 * 
 	 * @return String result 
+	 * @throws MalformedURLException
+	 * 
 	 */
 	public static  String chiamataAPI(String API) throws Exception {
 
@@ -82,6 +84,14 @@ public class Controller {
 		return UNIX_Data;
 	}
 	
+	/**
+	 * inserendo un indirizzo fornisce le coordinate geografiche e la traduzone in varie lingue (vedere classe oggetto)
+	 * 																						
+	 * 									
+	 * @param Città --> nome della città / indirizzo di cui si vuole conoscere le coordinate
+	 * 
+	 * @return coord
+	 * */
 	public static String Coordinate (String Città) throws Exception {
 		String key = "f044a8c15896675617344a49813d1a16";
 		 String coord ="";

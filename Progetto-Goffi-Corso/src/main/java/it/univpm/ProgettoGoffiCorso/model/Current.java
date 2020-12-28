@@ -12,7 +12,7 @@ public class Current {
 
 	/**
 	 * metodo in cui chiamanto il metoto "chiamataAPI" si crea il collegamneto 
-	 *con OpenWeather e si scaricano i dati relativi alla città inserita dall'utente 
+	 * con OpenWeather e si scaricano i dati relativi alla città inserita dall'utente 
 	 *
 	 *i dati vengono convertiti e scritti come stringhe in un file di testo 
 	 *tale operazione viene effettuata dal metodo "ScritturaFile_current"

@@ -14,12 +14,15 @@ import com.google.gson.reflect.TypeToken;
 public class CurrentParsing {
 	
 	
-	/**
-	 * effettua la conversione da stringa JSON a file "mappa" key-->value 
-	 * @param str
-	 * 
-	 * @return map
-	 * */
+/**
+ * conversione da file json a Map : key-->value 
+ * 
+ * 
+ * @param str --> sringa che contiene il json preso dalla chiamata API
+ * 
+ * @return map 
+ * 
+ * */
 	public static Map<String, Object> jsonToMap(String str) {
 		Map<String, Object> map = new Gson().fromJson(str, new TypeToken<HashMap<String, Object>>() {}.getType());
 		return map;

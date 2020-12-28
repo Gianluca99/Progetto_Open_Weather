@@ -14,6 +14,11 @@ import Forecast.*;
 public class Forecast {
 	public static Forecast__ F;
 	
+	/**
+	 * metodo in cui viene richiamati i metodi per aprire la connessione con API, fare il parsing del file json scaricato e scrivere su un file di testo i dati utili 
+	 * 
+	 * @param città
+	 * */
 	public static void  PressioneFutura(String città) throws Exception{
 		String api ="http://api.openweathermap.org/data/2.5/forecast?q="+città;
 		String forecast ="";
@@ -27,7 +32,12 @@ public class Forecast {
 		ScritturaFileForecast(città);
 	}
 	
-	
+	/**
+	 * inserisce nel file Dati.txt i dati delle previsioni della pressione relativa alla città inserita
+	 * 
+	 * @param Città
+	 *
+	 * */
 	public static void ScritturaFileForecast(String Città) {
 		
 		File writer = new File("dati.txt");//Scrittura delle previsioni all'interno del file//
