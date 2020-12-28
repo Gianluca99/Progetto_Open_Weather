@@ -10,18 +10,19 @@ import com.google.gson.Gson;
 import com.google.gson.parsing.*;
 
 import Forecast.*;
+
 public class Forecast {
 	public static void  PressioneFutura(String città) throws Exception{
-		String api ="http://api.openweathermap.org/data/2.5/forecast?q=";
+		String api ="http://api.openweathermap.org/data/2.5/forecast?q="+città;
 		String forecast ="";
 		try {
 			//prendo la string result dove ho tutti i dati dalla chiamata API
-			//pressioneAttuale == result
-			forecast = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api,città);
+			//forecast == result
+			forecast = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		com.google.gson.parsing.ForecastParsing.mapping(forecast, città);
+		com.google.gson.parsing.ForecastParsing.parsing(forecast, città);
 	}
 }
 

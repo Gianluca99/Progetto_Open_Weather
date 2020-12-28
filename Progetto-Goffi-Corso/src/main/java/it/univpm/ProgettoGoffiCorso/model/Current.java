@@ -22,12 +22,12 @@ public class Current {
 	 *@exception Exception
 	 */
 	public static void  PressioneAttuale(String città) throws Exception{
-		String api ="http://api.openweathermap.org/data/2.5/weather?q=";
+		String api ="http://api.openweathermap.org/data/2.5/weather?q="+città;
 		String pressioneAttuale ="";
 		try {
 			//prendo la string result dove ho tutti i dati dalla chiamata API
 			//pressioneAttuale == result
-			pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api,città);
+			pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

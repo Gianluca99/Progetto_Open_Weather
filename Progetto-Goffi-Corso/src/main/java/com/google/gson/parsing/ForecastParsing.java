@@ -12,8 +12,9 @@ import com.google.gson.Gson;
 
 public class ForecastParsing {
 	public static Forecast forecast;
-	public static void mapping(String dati, String città) {
-	Forecast forecast = new Gson().fromJson(dati, Forecast.class);//Parsing dei dati Json a tipo Forecast//
+	
+	public static void parsing (String dati, String città) {
+	 forecast = new Gson().fromJson(dati, Forecast.class);//Parsing dei dati Json a tipo Forecast//
 	File writer = new File("dati.txt");//Scrittura delle previsioni all'interno del file//
 	try{
 		  if(!writer.exists()){
@@ -33,4 +34,11 @@ public class ForecastParsing {
 		       System.out.println("Errore.");
 		}
 	}
+	
+	 public static Double Lat() {
+			return (forecast.getCity().getCoord().getLat());
+	 }
+	 public static Double Lon() {
+			return (forecast.getCity().getCoord().getLon());
+	 }
 }
