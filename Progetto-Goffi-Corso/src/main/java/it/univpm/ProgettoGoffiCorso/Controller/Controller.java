@@ -78,7 +78,6 @@ public class Controller {
 		}catch (MalformedURLException e) {
 			System.out.println(e);
 		}
-		System.out.println("la data in unix è :"+UNIX_Data);
 		return UNIX_Data;
 	}
 	

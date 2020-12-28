@@ -4,10 +4,10 @@ import Forecast.*;
 import com.google.gson.Gson;
 
 public class ForecastParsing {
-	public static Forecast__ forecast;
+	public static ForecastObject forecast;
 	
-	public static Forecast__ parsing (String dati, String città) {
-	 forecast = new Gson().fromJson(dati, Forecast__.class);//Parsing dei dati Json a tipo Forecast//
+	public static ForecastObject parsing (String dati) {
+	 forecast = new Gson().fromJson(dati, ForecastObject.class);//Parsing dei dati Json a tipo Forecast//
 	 return forecast;
 	}
  }

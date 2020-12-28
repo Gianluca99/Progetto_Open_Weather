@@ -12,7 +12,7 @@ import com.google.gson.parsing.*;
 import Forecast.*;
 
 public class Forecast {
-	public static Forecast__ F;
+	public static ForecastObject F;
 	
 	public static void  PressioneFutura(String città) throws Exception{
 		String api ="http://api.openweathermap.org/data/2.5/forecast?q="+città;
@@ -22,7 +22,7 @@ public class Forecast {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		F= com.google.gson.parsing.ForecastParsing.parsing(forecast, città);
+		F= com.google.gson.parsing.ForecastParsing.parsing(forecast);
 		
 		ScritturaFileForecast(città);
 	}

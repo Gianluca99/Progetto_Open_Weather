@@ -17,21 +17,20 @@ public class ProgettoGoffiCorsoApplication {
 		
 		System.out.println("Inserisci la Città:");
 		String CityName = in.nextLine();
-		//in.close();
-		/*
+		
 		try {
 			it.univpm.ProgettoGoffiCorso.model.Current.PressioneAttuale(CityName);
 			}
 			catch (Exception e) {
 				System.out.print(e);
 			}
-		*/
+		
 		try {
 			it.univpm.ProgettoGoffiCorso.model.Forecast.PressioneFutura(CityName);
 		}catch (Exception e) {
 			System.out.print(e);
 		}
-		/*
+		
 		System.out.println("Inserisci la data nel formato: aaaa/mm/gg");
 		String Data = in.nextLine();
 		try {
@@ -39,7 +38,7 @@ public class ProgettoGoffiCorsoApplication {
 		}catch (Exception e) {
 			System.out.println(e);
 		}
-		 */
+		 
 			}
 
 }
