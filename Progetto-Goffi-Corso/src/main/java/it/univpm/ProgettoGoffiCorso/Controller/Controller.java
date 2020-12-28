@@ -1,25 +1,16 @@
+/**
+ * Classe che si occupa delle varie chiamate API 
+ *		*Connessione con OpenWeather 
+ *		*Conversione della data da AAAA/MM/GG a UNIX
+ *		*Cordinate Geografiche di un'Indirizzo/Città 
+ * @author A.Goffi, G.Corso
+ * */
 package it.univpm.ProgettoGoffiCorso.Controller;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Map;
 
-import org.apache.tomcat.util.json.JSONParser;
-import org.json.simple.JSONObject;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-
-import jdk.internal.org.jline.reader.Parser;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import com.google.gson.*;
-import com.google.gson.reflect.*;
 
 public class Controller {
 	private static URLConnection connessione;
@@ -91,11 +82,11 @@ public class Controller {
 	 * 
 	 * @return coord
 	 * */
-	public static String Coordinate (String Città) throws Exception {
+	public static String Coordinate (String City) throws Exception {
 		String key = "f044a8c15896675617344a49813d1a16";
 		 String coord ="";
 		try {
-				URL url = new URL("http://api.openweathermap.org/geo/1.0/direct?q=" +Città+ "&limit=1&appid=" + key);
+				URL url = new URL("http://api.openweathermap.org/geo/1.0/direct?q=" +City+ "&limit=1&appid=" + key);
 				connessione = url.openConnection();
 				BufferedReader rd = new BufferedReader(new InputStreamReader(connessione.getInputStream()));
 				String line;
