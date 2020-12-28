@@ -5,7 +5,7 @@ package it.univpm.ProgettoGoffiCorso.model;
 
 import com.google.gson.Gson;
 
-import Forecast.Forecast;
+import Forecast.Forecast__;
 
 public class Historical {
 	

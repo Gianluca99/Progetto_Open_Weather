@@ -25,13 +25,13 @@ public class ProgettoGoffiCorsoApplication {
 			catch (Exception e) {
 				System.out.print(e);
 			}
-		
+		*/
 		try {
 			it.univpm.ProgettoGoffiCorso.model.Forecast.PressioneFutura(CityName);
 		}catch (Exception e) {
 			System.out.print(e);
 		}
-		*/
+		/*
 		System.out.println("Inserisci la data nel formato: aaaa/mm/gg");
 		String Data = in.nextLine();
 		try {
@@ -39,7 +39,7 @@ public class ProgettoGoffiCorsoApplication {
 		}catch (Exception e) {
 			System.out.println(e);
 		}
-	
+		 */
 			}
 
 }

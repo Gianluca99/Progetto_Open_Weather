@@ -1,7 +1,7 @@
 package Forecast;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-public class Forecast {
+public class Forecast__ {
     @SerializedName("cod")
     @Expose
     private String cod;
