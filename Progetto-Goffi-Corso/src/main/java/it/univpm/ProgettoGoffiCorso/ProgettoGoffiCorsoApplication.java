@@ -17,7 +17,6 @@ public class ProgettoGoffiCorsoApplication {
 		
 		System.out.println("Inserisci la Città:");
 		String CityName = in.nextLine();
-		//in.close();
 		
 		try {
 			it.univpm.ProgettoGoffiCorso.model.Current.PressioneAttuale(CityName);

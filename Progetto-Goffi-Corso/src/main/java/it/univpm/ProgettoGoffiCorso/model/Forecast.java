@@ -12,7 +12,7 @@ import com.google.gson.parsing.*;
 import Forecast.*;
 
 public class Forecast {
-	public static Forecast__ F;
+	public static ForecastObject F;
 	
 	/**
 	 * metodo in cui viene richiamati i metodi per aprire la connessione con API, fare il parsing del file json scaricato e scrivere su un file di testo i dati utili 
@@ -27,7 +27,7 @@ public class Forecast {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		F= com.google.gson.parsing.ForecastParsing.parsing(forecast, città);
+		F= com.google.gson.parsing.ForecastParsing.parsing(forecast);
 		
 		ScritturaFileForecast(città);
 	}
