@@ -8,6 +8,9 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+
 import Historical.HistoricalObject;
 
 public class Historical {
@@ -28,26 +31,41 @@ public class Historical {
 	 * 
 	 * @return void
 	 */
-	public static void Storico(String cityName, String data) {
+	public static void Storico(String cityName, String data) throws Exception {
+		Scanner in = new Scanner(System.in);
 		String dt = "";
 		String coord_API = "";
 		double[] coord = new double[2];
 		try {
+			dt = it.univpm.ProgettoGoffiCorso.Controller.Controller.Conversione_UNIX(data);
 			coord_API = it.univpm.ProgettoGoffiCorso.Controller.Controller.Coordinate(cityName);
 			com.google.gson.parsing.HistoricalParsing.ParsingCoord(coord_API);
 			coord[0] = com.google.gson.parsing.HistoricalParsing.GetLat();
 			coord[1] = com.google.gson.parsing.HistoricalParsing.GetLon();
-			dt = it.univpm.ProgettoGoffiCorso.Controller.Controller.Conversione_UNIX(data);
-
+			
 			String API = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=" + coord[0] + "&lon="
 					+ coord[1] + "&dt=" + dt;
 			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(API);
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
 			ScritturaFileHistorical(cityName, data);
-		} catch (Exception e) {
+		}catch(IndexOutOfBoundsException e) {
 			e.printStackTrace();
+				System.out.println("Città non trovata!\nInserisci una città valida: ");
+				it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.setNome(in.nextLine());
+				cityName = it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.getNome();
+				Storico(cityName, data);
 		}
-
+		catch(IOException e) {
+			e.printStackTrace();
+			System.out.println("Data inserita nel formato errato!\nInserisci la data nel formato aaaa/mm/gg: ");
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.d.setData(in.nextLine());
+			data=it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.d.getData();
+			Storico(cityName, data);
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		in.close();
 	}
 
 	/**

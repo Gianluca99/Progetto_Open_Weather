@@ -3,12 +3,12 @@
  * @author A.Goffi, G.Corso
  * */
 package it.univpm.ProgettoGoffiCorso.model;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Current {
 
@@ -26,19 +26,26 @@ public class Current {
 	public static void PressioneAttuale(String city) throws Exception {
 		String api = "http://api.openweathermap.org/data/2.5/weather?q=" + city;
 		String pressioneAttuale = "";
+		Scanner in = new Scanner(System.in);
 		try {
 			// prendo la string result dove ho tutti i dati dalla chiamata API
 			// pressioneAttuale == result
 			pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
 		// vado a selezionare il JSONObject "main" dove ho la pressione attuale
 		Map<String, Object> APImap = com.google.gson.parsing.CurrentParsing.jsonToMap(pressioneAttuale.toString());
 		Map<String, Object> MainMap = com.google.gson.parsing.CurrentParsing.jsonToMap(APImap.get("main").toString());
+		
 		// double Pressure = (double) MainMap.get("pressure"); //dovrei avere il valore
 		// della pressione
 		ScritturaFileCurrent(pressioneAttuale, APImap, MainMap, city);
+		} catch (Exception e) {
+			System.out.println("Città non trovata!\nInserisci una città valida: ");
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.setNome(in.nextLine());
+			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.getNome());
+		}
+		in.close();
+	
 	}
 
 	/**

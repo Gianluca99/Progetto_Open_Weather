@@ -8,11 +8,12 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
+
 import Forecast.*;
 
 public class Forecast {
 	public static ForecastObject F;
-
 	/**
 	 * metodo in cui viene richiamati i metodi per aprire la connessione con API,
 	 * per fare il parsing del file json scaricato e per scrivere su un file di
@@ -25,16 +26,21 @@ public class Forecast {
 	 * @exception Exception
 	 */
 	public static void PressioneFutura(String City) throws Exception {
+		Scanner in = new Scanner(System.in);
 		String api = "http://api.openweathermap.org/data/2.5/forecast?q=" + City;
 		String forecast = "";
 		try {
 			forecast = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 		F = com.google.gson.parsing.ForecastParsing.parsing(forecast);
 
 		ScritturaFileForecast(City);
+		} catch (Exception e) {
+			System.out.println("Città non trovata!\nInserisci una città valida: ");
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.setNome(in.nextLine());
+			PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.getNome());
+			
+		}
+		in.close();
 	}
 
 	/**
