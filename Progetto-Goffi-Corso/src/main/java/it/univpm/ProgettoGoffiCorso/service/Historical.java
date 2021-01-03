@@ -2,13 +2,12 @@
  * CLasse che si occupa dela gestione dei dati storici 
  * @author A.Goffi, G.Corso
  */
-package it.univpm.ProgettoGoffiCorso.model;
+package it.univpm.ProgettoGoffiCorso.service;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 import Historical.HistoricalObject;
@@ -31,7 +30,7 @@ public class Historical {
 	 * 
 	 * @return void
 	 */
-	public static void Storico(String cityName, String data) throws Exception {
+	public static HistoricalObject Storico(String cityName, String data) throws Exception {
 		Scanner in = new Scanner(System.in);
 		String dt = "";
 		String coord_API = "";
@@ -43,8 +42,7 @@ public class Historical {
 			coord[0] = com.google.gson.parsing.HistoricalParsing.GetLat();
 			coord[1] = com.google.gson.parsing.HistoricalParsing.GetLon();
 			
-			String API = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=" + coord[0] + "&lon="
-					+ coord[1] + "&dt=" + dt;
+			String API = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=" + coord[0] + "&lon="+ coord[1] + "&dt=" + dt;
 			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(API);
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
 			ScritturaFileHistorical(cityName, data);
@@ -56,7 +54,7 @@ public class Historical {
 				Storico(cityName, data);
 		}
 		catch(IOException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			System.out.println("Data inserita nel formato errato!\nInserisci la data nel formato aaaa/mm/gg: ");
 			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.d.setData(in.nextLine());
 			data=it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.d.getData();
@@ -66,6 +64,7 @@ public class Historical {
 			System.out.println(e);
 		}
 		in.close();
+		return H;
 	}
 
 	/**
@@ -87,8 +86,7 @@ public class Historical {
 
 			FileWriter fileWriter = new FileWriter(writer, true);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			bufferedWriter.write(
-					"\n\nI dati storici sulla pressione a " + City + " a partire dal giorno " + Data + " valgono:");
+			bufferedWriter.write("\n\nI dati storici sulla pressione a " + City + " a partire dal giorno " + Data + " valgono:");
 			for (int i = 0; i < 15; i++) {
 				bufferedWriter.write("\n " + H.getHourly().get(i).getPressure());
 			}

@@ -2,7 +2,7 @@
  * CLasse che si occupa della gestione dei dati predetti 
  * @author A.Goffi, G.Corso
  * */
-package it.univpm.ProgettoGoffiCorso.model;
+package it.univpm.ProgettoGoffiCorso.service;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -10,8 +10,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import Forecast.*;
+import org.springframework.stereotype.Service;
 
+import Forecast.*;
+@Service
 public class Forecast {
 	public static ForecastObject F;
 	/**
@@ -25,14 +27,14 @@ public class Forecast {
 	 * 
 	 * @exception Exception
 	 */
-	public static void PressioneFutura(String City) throws Exception {
+	public static ForecastObject PressioneFutura(String City) throws Exception {
 		Scanner in = new Scanner(System.in);
 		String api = "http://api.openweathermap.org/data/2.5/forecast?q=" + City;
 		String forecast = "";
 		try {
 			forecast = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
 		F = com.google.gson.parsing.ForecastParsing.parsing(forecast);
-
+		
 		ScritturaFileForecast(City);
 		} catch (Exception e) {
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
@@ -41,6 +43,7 @@ public class Forecast {
 			
 		}
 		in.close();
+		return F;
 	}
 
 	/**
@@ -53,7 +56,6 @@ public class Forecast {
 	 * @return void
 	 */
 	public static void ScritturaFileForecast(String City) {
-
 		File writer = new File("dati.txt"); // Scrittura delle previsioni all'interno del file//
 		try {
 			if (!writer.exists()) {
@@ -69,7 +71,6 @@ public class Forecast {
 			}
 			bufferedWriter.close();
 			System.out.println("Previsioni aggiunte al file!");
-
 		} catch (IOException e) {
 			System.out.println("Errore.");
 		}
