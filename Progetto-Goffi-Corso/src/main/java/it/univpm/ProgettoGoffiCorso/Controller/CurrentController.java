@@ -36,7 +36,7 @@ public class CurrentController {
 		    pa = Current.PressioneAttuale(city);
 		    Map<String, Object> APImap = com.google.gson.parsing.CurrentParsing.jsonToMap(pa.toString());
 			Map<String, Object> MainMap = com.google.gson.parsing.CurrentParsing.jsonToMap(APImap.get("main").toString());
-			R = "La pressione Attuale nella città di "+city+" vale: "+MainMap.get("pressure")+"hPa";
+			R = "La pressione attuale nella città di "+city+" vale: "+MainMap.get("pressure")+"hPa";
 		} catch (Exception e) {
 			//return "Città non trovata, Ritenta!";
 		}

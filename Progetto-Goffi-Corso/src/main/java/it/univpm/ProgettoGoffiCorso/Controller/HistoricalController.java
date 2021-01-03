@@ -25,7 +25,7 @@ public class HistoricalController {
 
 		}
 		for (int i=0; i<H.getHourly().size();i++) {
-			R.addElement("I dati storici sulla pressione a " + city + " a partire dal giorno " + data + " valgono:"+H.getHourly().get(i).getPressure());
+			R.addElement("I dati storici sulla pressione a " + city + " a partire dall'01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:"+H.getHourly().get(i).getPressure()+" hPa");
 		}
 		return R;
 

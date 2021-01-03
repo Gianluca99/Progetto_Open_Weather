@@ -47,23 +47,10 @@ public class Historical {
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
 			ScritturaFileHistorical(cityName, data);
 		}catch(IndexOutOfBoundsException e) {
-			e.printStackTrace();
-				System.out.println("Città non trovata!\nInserisci una città valida: ");
-				it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.setNome(in.nextLine());
-				cityName = it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.getNome();
-				Storico(cityName, data);
+			System.out.println("Città non trovata!\nInserisci una città valida: ");
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setNome(in.nextLine());
+			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome(), it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getData());
 		}
-		catch(IOException e) {
-			//e.printStackTrace();
-			System.out.println("Data inserita nel formato errato!\nInserisci la data nel formato aaaa/mm/gg: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.d.setData(in.nextLine());
-			data=it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.d.getData();
-			Storico(cityName, data);
-		}
-		catch(Exception e) {
-			System.out.println(e);
-		}
-		in.close();
 		return H;
 	}
 
@@ -86,8 +73,8 @@ public class Historical {
 
 			FileWriter fileWriter = new FileWriter(writer, true);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			bufferedWriter.write("\n\nI dati storici sulla pressione a " + City + " a partire dal giorno " + Data + " valgono:");
-			for (int i = 0; i < 15; i++) {
+			bufferedWriter.write("\n\nI dati storici sulla pressione a " + City + " a partire dall' 01:00 del giorno " + Data + " fino a 00:00 del giorno seguente valgono:");
+			for (int i = 0; i < H.getHourly().size(); i++) {
 				bufferedWriter.write("\n " + H.getHourly().get(i).getPressure());
 			}
 			bufferedWriter.close();

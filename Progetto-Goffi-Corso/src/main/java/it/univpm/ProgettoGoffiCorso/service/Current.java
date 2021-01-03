@@ -38,10 +38,9 @@ public class Current {
 
 		} catch (Exception e) {
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.setNome(in.nextLine());
-			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.getNome());
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setNome(in.nextLine());
+			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome());
 		}
-		in.close();
 		return pressioneAttuale;
 	}
 	public static Map<String, Object> CurrentMapping (String PressioneAttuale, String city) {

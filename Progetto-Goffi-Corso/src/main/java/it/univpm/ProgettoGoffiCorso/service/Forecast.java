@@ -28,7 +28,6 @@ public class Forecast {
 	 * @exception Exception
 	 */
 	public static ForecastObject PressioneFutura(String City) throws Exception {
-		Scanner in = new Scanner(System.in);
 		String api = "http://api.openweathermap.org/data/2.5/forecast?q=" + City;
 		String forecast = "";
 		try {
@@ -37,12 +36,12 @@ public class Forecast {
 		
 		ScritturaFileForecast(City);
 		} catch (Exception e) {
+			Scanner in = new Scanner(System.in);
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.setNome(in.nextLine());
-			PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.c.getNome());
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setNome(in.nextLine());
+			it.univpm.ProgettoGoffiCorso.service.Forecast.PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome());
 			
 		}
-		in.close();
 		return F;
 	}
 
@@ -65,7 +64,7 @@ public class Forecast {
 
 			FileWriter fileWriter = new FileWriter(writer, true);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			for (int i = 0; i < 40; i++) {
+			for (int i = 0; i < F.getList().size(); i++) {
 				bufferedWriter.write("\nLa pressione prevista a " + City + " tra " + ((i + 1) * 3) + " ore vale: "
 						+ F.getList().get(i).getMain().getPressure());
 			}

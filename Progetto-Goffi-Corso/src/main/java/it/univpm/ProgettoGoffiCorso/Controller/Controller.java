@@ -11,6 +11,7 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Scanner;
 
 public class Controller {
 	private static URLConnection connessione;
@@ -55,7 +56,6 @@ public class Controller {
 	 * @exception MalformedURLException
 	 * */
 	public static String Conversione_UNIX (String data) throws Exception{
-
 		String UNIX_Data="";
 		try {
 			URL url = new URL("https://showcase.api.linx.twenty57.net/UnixTime/tounix?date="+data);
@@ -68,8 +68,11 @@ public class Controller {
 				}
 			rd.close();
 			
-		}catch (MalformedURLException e) {
-			System.out.println(e);
+		}catch (IOException e) {
+			Scanner in = new Scanner(System.in);
+			System.out.println("Data inserita nel formato errato!\nInserisci la data nel formato aaaa/mm/gg: ");
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setData(in.nextLine());
+			Conversione_UNIX (it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getData());
 		}
 		return UNIX_Data;
 	}
