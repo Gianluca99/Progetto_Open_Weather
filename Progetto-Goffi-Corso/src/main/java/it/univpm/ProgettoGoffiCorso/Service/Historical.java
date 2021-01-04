@@ -2,7 +2,7 @@
  * CLasse che si occupa dela gestione dei dati storici 
  * @author A.Goffi, G.Corso
  */
-package it.univpm.ProgettoGoffiCorso.service;
+package it.univpm.ProgettoGoffiCorso.Service;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -31,7 +31,6 @@ public class Historical {
 	 * @return void
 	 */
 	public static HistoricalObject Storico(String cityName, String data) throws Exception {
-		Scanner in = new Scanner(System.in);
 		String dt = "";
 		String coord_API = "";
 		double[] coord = new double[2];
@@ -47,6 +46,7 @@ public class Historical {
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
 			ScritturaFileHistorical(cityName, data);
 		}catch(IndexOutOfBoundsException e) {
+			Scanner in = new Scanner(System.in);
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
 			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setNome(in.nextLine());
 			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome(), it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getData());
@@ -73,9 +73,9 @@ public class Historical {
 
 			FileWriter fileWriter = new FileWriter(writer, true);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			bufferedWriter.write("\n\nI dati storici sulla pressione a " + City + " a partire dall' 01:00 del giorno " + Data + " fino a 00:00 del giorno seguente valgono:");
+			bufferedWriter.write("\n\nLa pressione storica nella città di " + City + " a partire dall' 01:00 del giorno " + Data + " fino a 00:00 del giorno seguente valgono:");
 			for (int i = 0; i < H.getHourly().size(); i++) {
-				bufferedWriter.write("\n " + H.getHourly().get(i).getPressure());
+				bufferedWriter.write("\n " + H.getHourly().get(i).getPressure()+" hPa");
 			}
 			bufferedWriter.close();
 			System.out.println("Dati storici aggiunti al file!");

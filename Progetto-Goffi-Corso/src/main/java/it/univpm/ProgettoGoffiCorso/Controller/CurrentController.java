@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.method.annotation.RequestParamMapMethodArgumentResolver;
 
-import it.univpm.ProgettoGoffiCorso.service.Current;
+import it.univpm.ProgettoGoffiCorso.Service.Current;
 
 
 @RestController
 public class CurrentController {
 	
 	@Autowired 
-	private static  it.univpm.ProgettoGoffiCorso.service.Current Pattuale;
+	private static  it.univpm.ProgettoGoffiCorso.Service.Current Pattuale;
 
 	@RequestMapping ("/Welcome")
 	public String Start() {

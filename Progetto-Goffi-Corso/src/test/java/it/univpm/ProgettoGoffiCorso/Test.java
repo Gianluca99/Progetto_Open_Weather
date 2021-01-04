@@ -19,7 +19,7 @@ class Test {
 	@org.junit.jupiter.api.Test
 	void test() {
 		assertEquals("ancona", i.getNome());
-		assertEquals("2021/01/02", i.getData());
+		assertEquals("2021/1/3", i.getData());
 	}
 
 	@org.junit.jupiter.api.Test

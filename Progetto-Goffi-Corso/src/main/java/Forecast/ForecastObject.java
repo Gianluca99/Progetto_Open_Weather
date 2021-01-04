@@ -17,8 +17,9 @@ public class ForecastObject {
     @SerializedName("city")
     @Expose
     private City city;
+    
 
-    public String getCod() {
+	public String getCod() {
         return cod;
     }
 

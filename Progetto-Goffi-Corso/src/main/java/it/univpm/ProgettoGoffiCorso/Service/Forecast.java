@@ -2,7 +2,7 @@
  * CLasse che si occupa della gestione dei dati predetti 
  * @author A.Goffi, G.Corso
  * */
-package it.univpm.ProgettoGoffiCorso.service;
+package it.univpm.ProgettoGoffiCorso.Service;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -39,8 +39,7 @@ public class Forecast {
 			Scanner in = new Scanner(System.in);
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
 			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setNome(in.nextLine());
-			it.univpm.ProgettoGoffiCorso.service.Forecast.PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome());
-			
+			it.univpm.ProgettoGoffiCorso.Service.Forecast.PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome());
 		}
 		return F;
 	}
@@ -65,8 +64,8 @@ public class Forecast {
 			FileWriter fileWriter = new FileWriter(writer, true);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 			for (int i = 0; i < F.getList().size(); i++) {
-				bufferedWriter.write("\nLa pressione prevista a " + City + " tra " + ((i + 1) * 3) + " ore vale: "
-						+ F.getList().get(i).getMain().getPressure());
+				bufferedWriter.write("\nLa pressione prevista nella città di " + City + " tra " + ((i + 1) * 3) + " ore vale: "
+						+ F.getList().get(i).getMain().getPressure()+" hPa");
 			}
 			bufferedWriter.close();
 			System.out.println("Previsioni aggiunte al file!");

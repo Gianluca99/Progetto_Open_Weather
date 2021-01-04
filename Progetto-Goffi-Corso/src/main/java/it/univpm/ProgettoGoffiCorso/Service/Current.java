@@ -2,7 +2,7 @@
  * Classe che si occupa della gestione dei dati attuali 
  * @author A.Goffi, G.Corso
  * */
-package it.univpm.ProgettoGoffiCorso.service;
+package it.univpm.ProgettoGoffiCorso.Service;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -28,7 +28,6 @@ public class Current {
 	 */
 	public static String PressioneAttuale(String city) throws Exception {
 		String api = "http://api.openweathermap.org/data/2.5/weather?q=" + city;
-		
 		Scanner in = new Scanner(System.in);
 		try {
 			// prendo la string result dove ho tutti i dati dalla chiamata API
@@ -79,7 +78,7 @@ public class Current {
 			FileWriter fileWriter = new FileWriter(writer, true);
 
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			bufferedWriter.write("\nLa pressione attuale a " + city + " vale: " + main.get("pressure") + "\n");
+			bufferedWriter.write("\nLa pressione attuale nella città di " + city + " vale: " + main.get("pressure") + " hPa\n");
 			bufferedWriter.close();
 			System.out.println("Pressione aggiunta al file!");
 

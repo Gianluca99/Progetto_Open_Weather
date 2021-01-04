@@ -2092,3 +2092,806 @@ I dati storici sulla pressione a ancona a partire dall' 01:00 del giorno 2021/1/
  1008
  1009
  1008
+La pressione prevista a ancona tra 3 ore vale: 1009
+La pressione prevista a ancona tra 6 ore vale: 1010
+La pressione prevista a ancona tra 9 ore vale: 1011
+La pressione prevista a ancona tra 12 ore vale: 1010
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1010
+La pressione prevista a ancona tra 21 ore vale: 1010
+La pressione prevista a ancona tra 24 ore vale: 1008
+La pressione prevista a ancona tra 27 ore vale: 1007
+La pressione prevista a ancona tra 30 ore vale: 1007
+La pressione prevista a ancona tra 33 ore vale: 1008
+La pressione prevista a ancona tra 36 ore vale: 1008
+La pressione prevista a ancona tra 39 ore vale: 1009
+La pressione prevista a ancona tra 42 ore vale: 1010
+La pressione prevista a ancona tra 45 ore vale: 1011
+La pressione prevista a ancona tra 48 ore vale: 1012
+La pressione prevista a ancona tra 51 ore vale: 1012
+La pressione prevista a ancona tra 54 ore vale: 1013
+La pressione prevista a ancona tra 57 ore vale: 1014
+La pressione prevista a ancona tra 60 ore vale: 1015
+La pressione prevista a ancona tra 63 ore vale: 1015
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1016
+La pressione prevista a ancona tra 72 ore vale: 1016
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1015
+La pressione prevista a ancona tra 81 ore vale: 1015
+La pressione prevista a ancona tra 84 ore vale: 1014
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1013
+La pressione prevista a ancona tra 93 ore vale: 1013
+La pressione prevista a ancona tra 96 ore vale: 1012
+La pressione prevista a ancona tra 99 ore vale: 1011
+La pressione prevista a ancona tra 102 ore vale: 1012
+La pressione prevista a ancona tra 105 ore vale: 1012
+La pressione prevista a ancona tra 108 ore vale: 1011
+La pressione prevista a ancona tra 111 ore vale: 1008
+La pressione prevista a ancona tra 114 ore vale: 1005
+La pressione prevista a ancona tra 117 ore vale: 1003
+La pressione prevista a ancona tra 120 ore vale: 1000
+La pressione attuale a ancona vale: 1009.0
+
+
+I dati storici sulla pressione a ancona a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1008
+ 1009
+ 1008
+ 1009
+ 1008
+ 1008
+ 1008
+ 1008
+ 1010
+ 1010
+ 1010
+ 1010
+ 1009
+ 1008
+ 1008
+La pressione prevista a ancona tra 3 ore vale: 1009
+La pressione prevista a ancona tra 6 ore vale: 1010
+La pressione prevista a ancona tra 9 ore vale: 1011
+La pressione prevista a ancona tra 12 ore vale: 1010
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1010
+La pressione prevista a ancona tra 21 ore vale: 1010
+La pressione prevista a ancona tra 24 ore vale: 1008
+La pressione prevista a ancona tra 27 ore vale: 1007
+La pressione prevista a ancona tra 30 ore vale: 1007
+La pressione prevista a ancona tra 33 ore vale: 1008
+La pressione prevista a ancona tra 36 ore vale: 1008
+La pressione prevista a ancona tra 39 ore vale: 1009
+La pressione prevista a ancona tra 42 ore vale: 1010
+La pressione prevista a ancona tra 45 ore vale: 1011
+La pressione prevista a ancona tra 48 ore vale: 1012
+La pressione prevista a ancona tra 51 ore vale: 1012
+La pressione prevista a ancona tra 54 ore vale: 1013
+La pressione prevista a ancona tra 57 ore vale: 1014
+La pressione prevista a ancona tra 60 ore vale: 1015
+La pressione prevista a ancona tra 63 ore vale: 1015
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1016
+La pressione prevista a ancona tra 72 ore vale: 1016
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1015
+La pressione prevista a ancona tra 81 ore vale: 1015
+La pressione prevista a ancona tra 84 ore vale: 1014
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1013
+La pressione prevista a ancona tra 93 ore vale: 1013
+La pressione prevista a ancona tra 96 ore vale: 1012
+La pressione prevista a ancona tra 99 ore vale: 1011
+La pressione prevista a ancona tra 102 ore vale: 1012
+La pressione prevista a ancona tra 105 ore vale: 1012
+La pressione prevista a ancona tra 108 ore vale: 1011
+La pressione prevista a ancona tra 111 ore vale: 1008
+La pressione prevista a ancona tra 114 ore vale: 1005
+La pressione prevista a ancona tra 117 ore vale: 1003
+La pressione prevista a ancona tra 120 ore vale: 1000
+La pressione attuale a ancona vale: 1009.0
+
+
+I dati storici sulla pressione a ancona a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1008
+ 1009
+ 1008
+ 1009
+ 1008
+ 1008
+ 1008
+ 1008
+ 1010
+ 1010
+ 1010
+ 1010
+ 1009
+ 1008
+ 1008
+La pressione prevista a ancona tra 3 ore vale: 1009
+La pressione prevista a ancona tra 6 ore vale: 1010
+La pressione prevista a ancona tra 9 ore vale: 1011
+La pressione prevista a ancona tra 12 ore vale: 1010
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1010
+La pressione prevista a ancona tra 21 ore vale: 1010
+La pressione prevista a ancona tra 24 ore vale: 1008
+La pressione prevista a ancona tra 27 ore vale: 1007
+La pressione prevista a ancona tra 30 ore vale: 1007
+La pressione prevista a ancona tra 33 ore vale: 1008
+La pressione prevista a ancona tra 36 ore vale: 1008
+La pressione prevista a ancona tra 39 ore vale: 1009
+La pressione prevista a ancona tra 42 ore vale: 1010
+La pressione prevista a ancona tra 45 ore vale: 1011
+La pressione prevista a ancona tra 48 ore vale: 1012
+La pressione prevista a ancona tra 51 ore vale: 1012
+La pressione prevista a ancona tra 54 ore vale: 1013
+La pressione prevista a ancona tra 57 ore vale: 1014
+La pressione prevista a ancona tra 60 ore vale: 1015
+La pressione prevista a ancona tra 63 ore vale: 1015
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1016
+La pressione prevista a ancona tra 72 ore vale: 1016
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1015
+La pressione prevista a ancona tra 81 ore vale: 1015
+La pressione prevista a ancona tra 84 ore vale: 1014
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1013
+La pressione prevista a ancona tra 93 ore vale: 1013
+La pressione prevista a ancona tra 96 ore vale: 1012
+La pressione prevista a ancona tra 99 ore vale: 1011
+La pressione prevista a ancona tra 102 ore vale: 1012
+La pressione prevista a ancona tra 105 ore vale: 1012
+La pressione prevista a ancona tra 108 ore vale: 1011
+La pressione prevista a ancona tra 111 ore vale: 1008
+La pressione prevista a ancona tra 114 ore vale: 1005
+La pressione prevista a ancona tra 117 ore vale: 1003
+La pressione prevista a ancona tra 120 ore vale: 1000
+
+I dati storici sulla pressione a ancona a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1008
+ 1009
+ 1008
+ 1009
+ 1008
+ 1008
+ 1008
+ 1008
+ 1010
+ 1010
+ 1010
+ 1010
+ 1009
+ 1008
+ 1008
+La pressione attuale a ancona vale: 1009.0
+
+La pressione attuale a ancona vale: 1009.0
+
+La pressione attuale a ancona vale: 1009.0
+
+La pressione attuale a ancona vale: 1009.0
+
+La pressione prevista a ancona tra 3 ore vale: 1009
+La pressione prevista a ancona tra 6 ore vale: 1010
+La pressione prevista a ancona tra 9 ore vale: 1011
+La pressione prevista a ancona tra 12 ore vale: 1010
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1010
+La pressione prevista a ancona tra 21 ore vale: 1010
+La pressione prevista a ancona tra 24 ore vale: 1008
+La pressione prevista a ancona tra 27 ore vale: 1007
+La pressione prevista a ancona tra 30 ore vale: 1007
+La pressione prevista a ancona tra 33 ore vale: 1008
+La pressione prevista a ancona tra 36 ore vale: 1008
+La pressione prevista a ancona tra 39 ore vale: 1009
+La pressione prevista a ancona tra 42 ore vale: 1010
+La pressione prevista a ancona tra 45 ore vale: 1011
+La pressione prevista a ancona tra 48 ore vale: 1012
+La pressione prevista a ancona tra 51 ore vale: 1012
+La pressione prevista a ancona tra 54 ore vale: 1013
+La pressione prevista a ancona tra 57 ore vale: 1014
+La pressione prevista a ancona tra 60 ore vale: 1015
+La pressione prevista a ancona tra 63 ore vale: 1015
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1016
+La pressione prevista a ancona tra 72 ore vale: 1016
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1015
+La pressione prevista a ancona tra 81 ore vale: 1015
+La pressione prevista a ancona tra 84 ore vale: 1014
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1013
+La pressione prevista a ancona tra 93 ore vale: 1013
+La pressione prevista a ancona tra 96 ore vale: 1012
+La pressione prevista a ancona tra 99 ore vale: 1011
+La pressione prevista a ancona tra 102 ore vale: 1012
+La pressione prevista a ancona tra 105 ore vale: 1012
+La pressione prevista a ancona tra 108 ore vale: 1011
+La pressione prevista a ancona tra 111 ore vale: 1008
+La pressione prevista a ancona tra 114 ore vale: 1005
+La pressione prevista a ancona tra 117 ore vale: 1003
+La pressione prevista a ancona tra 120 ore vale: 1000
+
+I dati storici sulla pressione a anco a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1013
+ 1015
+ 1016
+ 1016
+ 1016
+ 1016
+ 1015
+ 1015
+ 1014
+ 1015
+ 1015
+ 1026
+ 1026
+ 1026
+ 1026
+ 1026
+La pressione attuale a ancona vale: 1010.0
+
+La pressione prevista a ancona tra 3 ore vale: 1010
+La pressione prevista a ancona tra 6 ore vale: 1011
+La pressione prevista a ancona tra 9 ore vale: 1010
+La pressione prevista a ancona tra 12 ore vale: 1010
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1010
+La pressione prevista a ancona tra 21 ore vale: 1008
+La pressione prevista a ancona tra 24 ore vale: 1007
+La pressione prevista a ancona tra 27 ore vale: 1007
+La pressione prevista a ancona tra 30 ore vale: 1008
+La pressione prevista a ancona tra 33 ore vale: 1008
+La pressione prevista a ancona tra 36 ore vale: 1009
+La pressione prevista a ancona tra 39 ore vale: 1010
+La pressione prevista a ancona tra 42 ore vale: 1011
+La pressione prevista a ancona tra 45 ore vale: 1012
+La pressione prevista a ancona tra 48 ore vale: 1012
+La pressione prevista a ancona tra 51 ore vale: 1013
+La pressione prevista a ancona tra 54 ore vale: 1014
+La pressione prevista a ancona tra 57 ore vale: 1015
+La pressione prevista a ancona tra 60 ore vale: 1015
+La pressione prevista a ancona tra 63 ore vale: 1016
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1016
+La pressione prevista a ancona tra 72 ore vale: 1015
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1015
+La pressione prevista a ancona tra 81 ore vale: 1014
+La pressione prevista a ancona tra 84 ore vale: 1013
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1013
+La pressione prevista a ancona tra 93 ore vale: 1012
+La pressione prevista a ancona tra 96 ore vale: 1011
+La pressione prevista a ancona tra 99 ore vale: 1012
+La pressione prevista a ancona tra 102 ore vale: 1012
+La pressione prevista a ancona tra 105 ore vale: 1011
+La pressione prevista a ancona tra 108 ore vale: 1008
+La pressione prevista a ancona tra 111 ore vale: 1005
+La pressione prevista a ancona tra 114 ore vale: 1003
+La pressione prevista a ancona tra 117 ore vale: 1000
+La pressione prevista a ancona tra 120 ore vale: 1000
+La pressione prevista a ancona tra 3 ore vale: 1010
+La pressione prevista a ancona tra 6 ore vale: 1011
+La pressione prevista a ancona tra 9 ore vale: 1010
+La pressione prevista a ancona tra 12 ore vale: 1010
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1010
+La pressione prevista a ancona tra 21 ore vale: 1008
+La pressione prevista a ancona tra 24 ore vale: 1007
+La pressione prevista a ancona tra 27 ore vale: 1007
+La pressione prevista a ancona tra 30 ore vale: 1008
+La pressione prevista a ancona tra 33 ore vale: 1008
+La pressione prevista a ancona tra 36 ore vale: 1009
+La pressione prevista a ancona tra 39 ore vale: 1010
+La pressione prevista a ancona tra 42 ore vale: 1011
+La pressione prevista a ancona tra 45 ore vale: 1012
+La pressione prevista a ancona tra 48 ore vale: 1012
+La pressione prevista a ancona tra 51 ore vale: 1013
+La pressione prevista a ancona tra 54 ore vale: 1014
+La pressione prevista a ancona tra 57 ore vale: 1015
+La pressione prevista a ancona tra 60 ore vale: 1015
+La pressione prevista a ancona tra 63 ore vale: 1016
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1016
+La pressione prevista a ancona tra 72 ore vale: 1015
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1015
+La pressione prevista a ancona tra 81 ore vale: 1014
+La pressione prevista a ancona tra 84 ore vale: 1013
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1013
+La pressione prevista a ancona tra 93 ore vale: 1012
+La pressione prevista a ancona tra 96 ore vale: 1011
+La pressione prevista a ancona tra 99 ore vale: 1012
+La pressione prevista a ancona tra 102 ore vale: 1012
+La pressione prevista a ancona tra 105 ore vale: 1011
+La pressione prevista a ancona tra 108 ore vale: 1008
+La pressione prevista a ancona tra 111 ore vale: 1005
+La pressione prevista a ancona tra 114 ore vale: 1003
+La pressione prevista a ancona tra 117 ore vale: 1000
+La pressione prevista a ancona tra 120 ore vale: 1000
+La pressione prevista a ancona tra 3 ore vale: 1010
+La pressione prevista a ancona tra 6 ore vale: 1010
+La pressione prevista a ancona tra 9 ore vale: 1010
+La pressione prevista a ancona tra 12 ore vale: 1009
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1008
+La pressione prevista a ancona tra 21 ore vale: 1007
+La pressione prevista a ancona tra 24 ore vale: 1008
+La pressione prevista a ancona tra 27 ore vale: 1009
+La pressione prevista a ancona tra 30 ore vale: 1009
+La pressione prevista a ancona tra 33 ore vale: 1010
+La pressione prevista a ancona tra 36 ore vale: 1010
+La pressione prevista a ancona tra 39 ore vale: 1011
+La pressione prevista a ancona tra 42 ore vale: 1012
+La pressione prevista a ancona tra 45 ore vale: 1012
+La pressione prevista a ancona tra 48 ore vale: 1013
+La pressione prevista a ancona tra 51 ore vale: 1015
+La pressione prevista a ancona tra 54 ore vale: 1015
+La pressione prevista a ancona tra 57 ore vale: 1015
+La pressione prevista a ancona tra 60 ore vale: 1016
+La pressione prevista a ancona tra 63 ore vale: 1016
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1015
+La pressione prevista a ancona tra 72 ore vale: 1015
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1014
+La pressione prevista a ancona tra 81 ore vale: 1013
+La pressione prevista a ancona tra 84 ore vale: 1012
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1012
+La pressione prevista a ancona tra 93 ore vale: 1012
+La pressione prevista a ancona tra 96 ore vale: 1013
+La pressione prevista a ancona tra 99 ore vale: 1013
+La pressione prevista a ancona tra 102 ore vale: 1013
+La pressione prevista a ancona tra 105 ore vale: 1012
+La pressione prevista a ancona tra 108 ore vale: 1012
+La pressione prevista a ancona tra 111 ore vale: 1011
+La pressione prevista a ancona tra 114 ore vale: 1009
+La pressione prevista a ancona tra 117 ore vale: 1007
+La pressione prevista a ancona tra 120 ore vale: 1005
+
+I dati storici sulla pressione a ancona a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1008
+ 1009
+ 1008
+ 1009
+ 1008
+ 1008
+ 1008
+ 1008
+ 1010
+ 1010
+ 1010
+ 1010
+ 1009
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+La pressione prevista a ancona tra 3 ore vale: 1010
+La pressione prevista a ancona tra 6 ore vale: 1010
+La pressione prevista a ancona tra 9 ore vale: 1010
+La pressione prevista a ancona tra 12 ore vale: 1009
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1008
+La pressione prevista a ancona tra 21 ore vale: 1007
+La pressione prevista a ancona tra 24 ore vale: 1008
+La pressione prevista a ancona tra 27 ore vale: 1009
+La pressione prevista a ancona tra 30 ore vale: 1009
+La pressione prevista a ancona tra 33 ore vale: 1010
+La pressione prevista a ancona tra 36 ore vale: 1010
+La pressione prevista a ancona tra 39 ore vale: 1011
+La pressione prevista a ancona tra 42 ore vale: 1012
+La pressione prevista a ancona tra 45 ore vale: 1012
+La pressione prevista a ancona tra 48 ore vale: 1013
+La pressione prevista a ancona tra 51 ore vale: 1015
+La pressione prevista a ancona tra 54 ore vale: 1015
+La pressione prevista a ancona tra 57 ore vale: 1015
+La pressione prevista a ancona tra 60 ore vale: 1016
+La pressione prevista a ancona tra 63 ore vale: 1016
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1015
+La pressione prevista a ancona tra 72 ore vale: 1015
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1014
+La pressione prevista a ancona tra 81 ore vale: 1013
+La pressione prevista a ancona tra 84 ore vale: 1012
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1012
+La pressione prevista a ancona tra 93 ore vale: 1012
+La pressione prevista a ancona tra 96 ore vale: 1013
+La pressione prevista a ancona tra 99 ore vale: 1013
+La pressione prevista a ancona tra 102 ore vale: 1013
+La pressione prevista a ancona tra 105 ore vale: 1012
+La pressione prevista a ancona tra 108 ore vale: 1012
+La pressione prevista a ancona tra 111 ore vale: 1011
+La pressione prevista a ancona tra 114 ore vale: 1009
+La pressione prevista a ancona tra 117 ore vale: 1007
+La pressione prevista a ancona tra 120 ore vale: 1005
+
+I dati storici sulla pressione a falconara marittima a partire dall' 01:00 del giorno 2021/1/3 fino a 00:00 del giorno seguente valgono:
+ 1006
+ 1007
+ 1007
+ 1007
+ 1007
+ 1007
+ 1007
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+ 1008
+ 1008
+ 1008
+ 1009
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+ 1009
+
+I dati storici sulla pressione a falconara marittima a partire dall' 01:00 del giorno 2021/1/3 fino a 00:00 del giorno seguente valgono:
+ 1006
+ 1007
+ 1007
+ 1007
+ 1007
+ 1007
+ 1007
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+ 1008
+ 1008
+ 1008
+ 1009
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+ 1009
+La pressione attuale a ancona vale: 1010.0
+
+La pressione prevista a ancona tra 3 ore vale: 1010
+La pressione prevista a ancona tra 6 ore vale: 1010
+La pressione prevista a ancona tra 9 ore vale: 1010
+La pressione prevista a ancona tra 12 ore vale: 1009
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1008
+La pressione prevista a ancona tra 21 ore vale: 1007
+La pressione prevista a ancona tra 24 ore vale: 1008
+La pressione prevista a ancona tra 27 ore vale: 1009
+La pressione prevista a ancona tra 30 ore vale: 1009
+La pressione prevista a ancona tra 33 ore vale: 1010
+La pressione prevista a ancona tra 36 ore vale: 1010
+La pressione prevista a ancona tra 39 ore vale: 1011
+La pressione prevista a ancona tra 42 ore vale: 1012
+La pressione prevista a ancona tra 45 ore vale: 1012
+La pressione prevista a ancona tra 48 ore vale: 1013
+La pressione prevista a ancona tra 51 ore vale: 1015
+La pressione prevista a ancona tra 54 ore vale: 1015
+La pressione prevista a ancona tra 57 ore vale: 1015
+La pressione prevista a ancona tra 60 ore vale: 1016
+La pressione prevista a ancona tra 63 ore vale: 1016
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1015
+La pressione prevista a ancona tra 72 ore vale: 1015
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1014
+La pressione prevista a ancona tra 81 ore vale: 1013
+La pressione prevista a ancona tra 84 ore vale: 1012
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1012
+La pressione prevista a ancona tra 93 ore vale: 1012
+La pressione prevista a ancona tra 96 ore vale: 1013
+La pressione prevista a ancona tra 99 ore vale: 1013
+La pressione prevista a ancona tra 102 ore vale: 1013
+La pressione prevista a ancona tra 105 ore vale: 1012
+La pressione prevista a ancona tra 108 ore vale: 1012
+La pressione prevista a ancona tra 111 ore vale: 1011
+La pressione prevista a ancona tra 114 ore vale: 1009
+La pressione prevista a ancona tra 117 ore vale: 1007
+La pressione prevista a ancona tra 120 ore vale: 1005
+
+I dati storici sulla pressione a ancona a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1008
+ 1009
+ 1008
+ 1009
+ 1008
+ 1008
+ 1008
+ 1008
+ 1010
+ 1010
+ 1010
+ 1010
+ 1009
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+
+I dati storici sulla pressione a falconara marittima a partire dall' 01:00 del giorno 2021/1/3 fino a 00:00 del giorno seguente valgono:
+ 1006
+ 1007
+ 1007
+ 1007
+ 1007
+ 1007
+ 1007
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+ 1008
+ 1008
+ 1008
+ 1009
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+ 1009
+La pressione attuale a roma vale: 1015.0
+
+La pressione prevista a ancona tra 3 ore vale: 1011
+La pressione prevista a ancona tra 6 ore vale: 1010
+La pressione prevista a ancona tra 9 ore vale: 1010
+La pressione prevista a ancona tra 12 ore vale: 1009
+La pressione prevista a ancona tra 15 ore vale: 1010
+La pressione prevista a ancona tra 18 ore vale: 1008
+La pressione prevista a ancona tra 21 ore vale: 1007
+La pressione prevista a ancona tra 24 ore vale: 1008
+La pressione prevista a ancona tra 27 ore vale: 1009
+La pressione prevista a ancona tra 30 ore vale: 1009
+La pressione prevista a ancona tra 33 ore vale: 1010
+La pressione prevista a ancona tra 36 ore vale: 1010
+La pressione prevista a ancona tra 39 ore vale: 1011
+La pressione prevista a ancona tra 42 ore vale: 1012
+La pressione prevista a ancona tra 45 ore vale: 1012
+La pressione prevista a ancona tra 48 ore vale: 1013
+La pressione prevista a ancona tra 51 ore vale: 1015
+La pressione prevista a ancona tra 54 ore vale: 1015
+La pressione prevista a ancona tra 57 ore vale: 1015
+La pressione prevista a ancona tra 60 ore vale: 1016
+La pressione prevista a ancona tra 63 ore vale: 1016
+La pressione prevista a ancona tra 66 ore vale: 1016
+La pressione prevista a ancona tra 69 ore vale: 1015
+La pressione prevista a ancona tra 72 ore vale: 1015
+La pressione prevista a ancona tra 75 ore vale: 1015
+La pressione prevista a ancona tra 78 ore vale: 1014
+La pressione prevista a ancona tra 81 ore vale: 1013
+La pressione prevista a ancona tra 84 ore vale: 1012
+La pressione prevista a ancona tra 87 ore vale: 1013
+La pressione prevista a ancona tra 90 ore vale: 1012
+La pressione prevista a ancona tra 93 ore vale: 1012
+La pressione prevista a ancona tra 96 ore vale: 1013
+La pressione prevista a ancona tra 99 ore vale: 1013
+La pressione prevista a ancona tra 102 ore vale: 1013
+La pressione prevista a ancona tra 105 ore vale: 1012
+La pressione prevista a ancona tra 108 ore vale: 1012
+La pressione prevista a ancona tra 111 ore vale: 1011
+La pressione prevista a ancona tra 114 ore vale: 1009
+La pressione prevista a ancona tra 117 ore vale: 1007
+La pressione prevista a ancona tra 120 ore vale: 1005
+
+I dati storici sulla pressione a falconara marittima a partire dall' 01:00 del giorno 2021/1/3 fino a 00:00 del giorno seguente valgono:
+ 1006
+ 1007
+ 1007
+ 1007
+ 1007
+ 1007
+ 1007
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+ 1008
+ 1008
+ 1008
+ 1009
+ 1008
+ 1008
+ 1009
+ 1009
+ 1009
+ 1009
+ 1009
+La pressione attuale a salerno vale: 1011.0
+
+La pressione prevista nella città di salerno tra 3 ore vale: 1012 hPa
+La pressione prevista nella città di salerno tra 6 ore vale: 1013 hPa
+La pressione prevista nella città di salerno tra 9 ore vale: 1013 hPa
+La pressione prevista nella città di salerno tra 12 ore vale: 1012 hPa
+La pressione prevista nella città di salerno tra 15 ore vale: 1013 hPa
+La pressione prevista nella città di salerno tra 18 ore vale: 1012 hPa
+La pressione prevista nella città di salerno tra 21 ore vale: 1012 hPa
+La pressione prevista nella città di salerno tra 24 ore vale: 1012 hPa
+La pressione prevista nella città di salerno tra 27 ore vale: 1012 hPa
+La pressione prevista nella città di salerno tra 30 ore vale: 1013 hPa
+La pressione prevista nella città di salerno tra 33 ore vale: 1013 hPa
+La pressione prevista nella città di salerno tra 36 ore vale: 1014 hPa
+La pressione prevista nella città di salerno tra 39 ore vale: 1014 hPa
+La pressione prevista nella città di salerno tra 42 ore vale: 1014 hPa
+La pressione prevista nella città di salerno tra 45 ore vale: 1014 hPa
+La pressione prevista nella città di salerno tra 48 ore vale: 1015 hPa
+La pressione prevista nella città di salerno tra 51 ore vale: 1016 hPa
+La pressione prevista nella città di salerno tra 54 ore vale: 1017 hPa
+La pressione prevista nella città di salerno tra 57 ore vale: 1017 hPa
+La pressione prevista nella città di salerno tra 60 ore vale: 1017 hPa
+La pressione prevista nella città di salerno tra 63 ore vale: 1016 hPa
+La pressione prevista nella città di salerno tra 66 ore vale: 1015 hPa
+La pressione prevista nella città di salerno tra 69 ore vale: 1013 hPa
+La pressione prevista nella città di salerno tra 72 ore vale: 1013 hPa
+La pressione prevista nella città di salerno tra 75 ore vale: 1012 hPa
+La pressione prevista nella città di salerno tra 78 ore vale: 1011 hPa
+La pressione prevista nella città di salerno tra 81 ore vale: 1009 hPa
+La pressione prevista nella città di salerno tra 84 ore vale: 1009 hPa
+La pressione prevista nella città di salerno tra 87 ore vale: 1010 hPa
+La pressione prevista nella città di salerno tra 90 ore vale: 1009 hPa
+La pressione prevista nella città di salerno tra 93 ore vale: 1009 hPa
+La pressione prevista nella città di salerno tra 96 ore vale: 1010 hPa
+La pressione prevista nella città di salerno tra 99 ore vale: 1011 hPa
+La pressione prevista nella città di salerno tra 102 ore vale: 1011 hPa
+La pressione prevista nella città di salerno tra 105 ore vale: 1010 hPa
+La pressione prevista nella città di salerno tra 108 ore vale: 1010 hPa
+La pressione prevista nella città di salerno tra 111 ore vale: 1009 hPa
+La pressione prevista nella città di salerno tra 114 ore vale: 1007 hPa
+La pressione prevista nella città di salerno tra 117 ore vale: 1005 hPa
+La pressione prevista nella città di salerno tra 120 ore vale: 1004 hPa
+
+La pressione storica nella città di salerno a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1009 hPa
+ 1009 hPa
+ 1009 hPa
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1009 hPa
+ 1009 hPa
+ 1008 hPa
+ 1009 hPa
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1009 hPa
+ 1010 hPa
+ 1010 hPa
+La pressione attuale a ancona vale: 1011.0
+
+La pressione prevista nella città di ancona tra 3 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 6 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 9 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 12 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 15 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 18 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 21 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 24 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 27 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 30 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 33 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 36 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 39 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 42 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 45 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 48 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 51 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 54 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 57 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 60 ore vale: 1016 hPa
+La pressione prevista nella città di ancona tra 63 ore vale: 1016 hPa
+La pressione prevista nella città di ancona tra 66 ore vale: 1016 hPa
+La pressione prevista nella città di ancona tra 69 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 72 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 75 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 78 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 81 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 84 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 87 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 90 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 93 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 96 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 99 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 102 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 105 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 108 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 111 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 114 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 117 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 120 ore vale: 1005 hPa
+La pressione prevista nella città di ancona tra 3 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 6 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 9 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 12 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 15 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 18 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 21 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 24 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 27 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 30 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 33 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 36 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 39 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 42 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 45 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 48 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 51 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 54 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 57 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 60 ore vale: 1016 hPa
+La pressione prevista nella città di ancona tra 63 ore vale: 1016 hPa
+La pressione prevista nella città di ancona tra 66 ore vale: 1016 hPa
+La pressione prevista nella città di ancona tra 69 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 72 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 75 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 78 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 81 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 84 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 87 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 90 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 93 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 96 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 99 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 102 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 105 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 108 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 111 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 114 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 117 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 120 ore vale: 1005 hPa
+
+La pressione storica nella città di ancona a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1008 hPa
+ 1009 hPa
+ 1008 hPa
+ 1009 hPa
+ 1008 hPa
+ 1008 hPa
+ 1008 hPa
+ 1008 hPa
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1009 hPa
+ 1008 hPa
+ 1008 hPa
+ 1009 hPa
+ 1009 hPa
+ 1009 hPa
+ 1009 hPa
+ 1009 hPa
+ 1009 hPa
