@@ -37,8 +37,8 @@ public class Current {
 
 		} catch (Exception e) {
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setNome(in.nextLine());
-			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome());
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
+			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome());
 		}
 		return pressioneAttuale;
 	}
@@ -48,7 +48,8 @@ public class Current {
 		Map<String, Object> MainMap = com.google.gson.parsing.CurrentParsing.jsonToMap(APImap.get("main").toString());
 		// double Pressure = (double) MainMap.get("pressure"); //dovrei avere il valore
 		// della pressione
-		ScritturaFileCurrent(pressioneAttuale, APImap, MainMap, city);
+		//ScritturaFileCurrent(pressioneAttuale, APImap, MainMap, city);
+		//System.out.println("\nLa pressione attuale nella città di " + city + " vale: " + MainMap.get("pressure") + " hPa\n");
 		return MainMap;
 	}
 
@@ -68,7 +69,7 @@ public class Current {
 	 */
 	public static void ScritturaFileCurrent(String dati, Map<String, Object> JsonT, Map<String, Object> main,
 			String city) {
-		File writer = new File("dati.txt");
+		File writer = new File("DatiAttuali.txt");
 		try {
 			if (!writer.exists()) {
 				System.out.println("Nuovo file creato.");

@@ -33,13 +33,16 @@ public class Forecast {
 		try {
 			forecast = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
 		F = com.google.gson.parsing.ForecastParsing.parsing(forecast);
-		
-		ScritturaFileForecast(City);
+		/*for (int i = 0; i < F.getList().size(); i++) {
+			System.out.println("\nLa pressione prevista nella città di " + City + " tra " + ((i + 1) * 3) + " ore vale: "
+					+ F.getList().get(i).getMain().getPressure()+" hPa");
+		}*/
+		//ScritturaFileForecast(City);
 		} catch (Exception e) {
 			Scanner in = new Scanner(System.in);
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setNome(in.nextLine());
-			it.univpm.ProgettoGoffiCorso.Service.Forecast.PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome());
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
+			it.univpm.ProgettoGoffiCorso.Service.Forecast.PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome());
 		}
 		return F;
 	}
@@ -54,7 +57,7 @@ public class Forecast {
 	 * @return void
 	 */
 	public static void ScritturaFileForecast(String City) {
-		File writer = new File("dati.txt"); // Scrittura delle previsioni all'interno del file//
+		File writer = new File("DatiPrevisti.txt"); // Scrittura delle previsioni all'interno del file//
 		try {
 			if (!writer.exists()) {
 				System.out.println("Nuovo file creato.");

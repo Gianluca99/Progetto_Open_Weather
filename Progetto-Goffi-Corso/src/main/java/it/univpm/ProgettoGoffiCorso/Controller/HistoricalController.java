@@ -19,8 +19,12 @@ public class HistoricalController {
 	public Vector<String> storic(@RequestParam String city,@RequestParam String data) throws Exception  {
 		h.setNome(city);
 		h.setData(data);
-		h.SetHistoricalVett();;
-		return h.GetHistoricalVett();
-
+		h.SetHistoricalVett();
+		Vector<String> storico = new Vector<String>();
+		for(int i=0;i<h.GetHistoricalVett().size();i++) {
+			storico.add("La pressione storica nella città di " + city + " a partire dall' 01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:"+ h.GetHistoricalVett().get(i));
+		}
+		
+		return storico;
 	}
 }

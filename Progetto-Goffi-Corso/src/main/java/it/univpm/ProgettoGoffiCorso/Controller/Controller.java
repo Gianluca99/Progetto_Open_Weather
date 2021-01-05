@@ -71,8 +71,8 @@ public class Controller {
 		}catch (IOException e) {
 			Scanner in = new Scanner(System.in);
 			System.out.println("Data inserita nel formato errato!\nInserisci la data nel formato aaaa/mm/gg: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setData(in.nextLine());
-			Conversione_UNIX (it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getData());
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setData(in.nextLine());
+			Conversione_UNIX (it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());
 		}
 		return UNIX_Data;
 	}

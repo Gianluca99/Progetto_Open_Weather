@@ -44,12 +44,17 @@ public class Historical {
 			String API = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=" + coord[0] + "&lon="+ coord[1] + "&dt=" + dt;
 			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(API);
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
-			ScritturaFileHistorical(cityName, data);
+			//ScritturaFileHistorical(cityName, data);
+			/*System.out.println("\n\nLa pressione storica nella città di " + cityName + " a partire dall' 01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:");
+			for (int i = 0; i < H.getHourly().size(); i++) {
+				System.out.println("\n " + H.getHourly().get(i).getPressure()+" hPa");
+			}*/
+			
 		}catch(IndexOutOfBoundsException e) {
 			Scanner in = new Scanner(System.in);
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.setNome(in.nextLine());
-			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getNome(), it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.i.getData());
+			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
+			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome(), it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());
 		}
 		return H;
 	}
@@ -64,7 +69,7 @@ public class Historical {
 	 * @return void
 	 */
 	public static void ScritturaFileHistorical(String City, String Data) {
-		File writer = new File("dati.txt");// Scrittura delle previsioni all'interno del file//
+		File writer = new File("DatiStorici.txt");// Scrittura delle previsioni all'interno del file//
 		try {
 			if (!writer.exists()) {
 				System.out.println("Nuovo file creato.");

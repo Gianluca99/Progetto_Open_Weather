@@ -2895,3 +2895,229 @@ La pressione storica nella città di ancona a partire dall' 01:00 del giorno 202
  1009 hPa
  1009 hPa
  1009 hPa
+La pressione prevista nella città di ancona tra 3 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 6 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 9 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 12 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 15 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 18 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 21 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 24 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 27 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 30 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 33 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 36 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 39 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 42 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 45 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 48 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 51 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 54 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 57 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 60 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 63 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 66 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 69 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 72 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 75 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 78 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 81 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 84 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 87 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 90 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 93 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 96 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 99 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 102 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 105 ore vale: 1006 hPa
+La pressione prevista nella città di ancona tra 108 ore vale: 1004 hPa
+La pressione prevista nella città di ancona tra 111 ore vale: 1003 hPa
+La pressione prevista nella città di ancona tra 114 ore vale: 1003 hPa
+La pressione prevista nella città di ancona tra 117 ore vale: 1004 hPa
+La pressione prevista nella città di ancona tra 120 ore vale: 1006 hPa
+La pressione prevista nella città di ancona tra 3 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 6 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 9 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 12 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 15 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 18 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 21 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 24 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 27 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 30 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 33 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 36 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 39 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 42 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 45 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 48 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 51 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 54 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 57 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 60 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 63 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 66 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 69 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 72 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 75 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 78 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 81 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 84 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 87 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 90 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 93 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 96 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 99 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 102 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 105 ore vale: 1006 hPa
+La pressione prevista nella città di ancona tra 108 ore vale: 1004 hPa
+La pressione prevista nella città di ancona tra 111 ore vale: 1003 hPa
+La pressione prevista nella città di ancona tra 114 ore vale: 1003 hPa
+La pressione prevista nella città di ancona tra 117 ore vale: 1004 hPa
+La pressione prevista nella città di ancona tra 120 ore vale: 1006 hPa
+La pressione prevista nella città di ancona tra 3 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 6 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 9 ore vale: 1007 hPa
+La pressione prevista nella città di ancona tra 12 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 15 ore vale: 1009 hPa
+La pressione prevista nella città di ancona tra 18 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 21 ore vale: 1010 hPa
+La pressione prevista nella città di ancona tra 24 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 27 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 30 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 33 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 36 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 39 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 42 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 45 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 48 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 51 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 54 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 57 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 60 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 63 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 66 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 69 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 72 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 75 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 78 ore vale: 1013 hPa
+La pressione prevista nella città di ancona tra 81 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 84 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 87 ore vale: 1015 hPa
+La pressione prevista nella città di ancona tra 90 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 93 ore vale: 1014 hPa
+La pressione prevista nella città di ancona tra 96 ore vale: 1012 hPa
+La pressione prevista nella città di ancona tra 99 ore vale: 1011 hPa
+La pressione prevista nella città di ancona tra 102 ore vale: 1008 hPa
+La pressione prevista nella città di ancona tra 105 ore vale: 1006 hPa
+La pressione prevista nella città di ancona tra 108 ore vale: 1004 hPa
+La pressione prevista nella città di ancona tra 111 ore vale: 1003 hPa
+La pressione prevista nella città di ancona tra 114 ore vale: 1003 hPa
+La pressione prevista nella città di ancona tra 117 ore vale: 1004 hPa
+La pressione prevista nella città di ancona tra 120 ore vale: 1006 hPa
+
+La pressione storica nella città di falconara marittima a partire dall' 01:00 del giorno 2021/1/4 fino a 00:00 del giorno seguente valgono:
+ 1008 hPa
+ 1008 hPa
+ 1008 hPa
+ 1008 hPa
+ 1008 hPa
+ 1008 hPa
+ 1008 hPa
+ 1008 hPa
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1010 hPa
+ 1009 hPa
+ 1008 hPa
+ 1008 hPa
+ 1009 hPa
+ 1008 hPa
+ 1008 hPa
+ 1009 hPa
+ 1009 hPa
+ 1009 hPa
+ 1009 hPa
+ 1008 hPa
+ 1009 hPa
+La pressione prevista nella città di Ancona tra 3 ore vale: 1008 hPa
+La pressione prevista nella città di Ancona tra 6 ore vale: 1007 hPa
+La pressione prevista nella città di Ancona tra 9 ore vale: 1007 hPa
+La pressione prevista nella città di Ancona tra 12 ore vale: 1009 hPa
+La pressione prevista nella città di Ancona tra 15 ore vale: 1009 hPa
+La pressione prevista nella città di Ancona tra 18 ore vale: 1010 hPa
+La pressione prevista nella città di Ancona tra 21 ore vale: 1010 hPa
+La pressione prevista nella città di Ancona tra 24 ore vale: 1012 hPa
+La pressione prevista nella città di Ancona tra 27 ore vale: 1012 hPa
+La pressione prevista nella città di Ancona tra 30 ore vale: 1012 hPa
+La pressione prevista nella città di Ancona tra 33 ore vale: 1013 hPa
+La pressione prevista nella città di Ancona tra 36 ore vale: 1014 hPa
+La pressione prevista nella città di Ancona tra 39 ore vale: 1015 hPa
+La pressione prevista nella città di Ancona tra 42 ore vale: 1015 hPa
+La pressione prevista nella città di Ancona tra 45 ore vale: 1015 hPa
+La pressione prevista nella città di Ancona tra 48 ore vale: 1015 hPa
+La pressione prevista nella città di Ancona tra 51 ore vale: 1015 hPa
+La pressione prevista nella città di Ancona tra 54 ore vale: 1014 hPa
+La pressione prevista nella città di Ancona tra 57 ore vale: 1014 hPa
+La pressione prevista nella città di Ancona tra 60 ore vale: 1013 hPa
+La pressione prevista nella città di Ancona tra 63 ore vale: 1013 hPa
+La pressione prevista nella città di Ancona tra 66 ore vale: 1012 hPa
+La pressione prevista nella città di Ancona tra 69 ore vale: 1012 hPa
+La pressione prevista nella città di Ancona tra 72 ore vale: 1013 hPa
+La pressione prevista nella città di Ancona tra 75 ore vale: 1013 hPa
+La pressione prevista nella città di Ancona tra 78 ore vale: 1013 hPa
+La pressione prevista nella città di Ancona tra 81 ore vale: 1015 hPa
+La pressione prevista nella città di Ancona tra 84 ore vale: 1015 hPa
+La pressione prevista nella città di Ancona tra 87 ore vale: 1015 hPa
+La pressione prevista nella città di Ancona tra 90 ore vale: 1014 hPa
+La pressione prevista nella città di Ancona tra 93 ore vale: 1014 hPa
+La pressione prevista nella città di Ancona tra 96 ore vale: 1012 hPa
+La pressione prevista nella città di Ancona tra 99 ore vale: 1011 hPa
+La pressione prevista nella città di Ancona tra 102 ore vale: 1008 hPa
+La pressione prevista nella città di Ancona tra 105 ore vale: 1006 hPa
+La pressione prevista nella città di Ancona tra 108 ore vale: 1004 hPa
+La pressione prevista nella città di Ancona tra 111 ore vale: 1003 hPa
+La pressione prevista nella città di Ancona tra 114 ore vale: 1003 hPa
+La pressione prevista nella città di Ancona tra 117 ore vale: 1004 hPa
+La pressione prevista nella città di Ancona tra 120 ore vale: 1006 hPa
+La pressione prevista nella città di Roma tra 3 ore vale: 1015 hPa
+La pressione prevista nella città di Roma tra 6 ore vale: 1016 hPa
+La pressione prevista nella città di Roma tra 9 ore vale: 1014 hPa
+La pressione prevista nella città di Roma tra 12 ore vale: 1015 hPa
+La pressione prevista nella città di Roma tra 15 ore vale: 1017 hPa
+La pressione prevista nella città di Roma tra 18 ore vale: 1017 hPa
+La pressione prevista nella città di Roma tra 21 ore vale: 1017 hPa
+La pressione prevista nella città di Roma tra 24 ore vale: 1018 hPa
+La pressione prevista nella città di Roma tra 27 ore vale: 1019 hPa
+La pressione prevista nella città di Roma tra 30 ore vale: 1020 hPa
+La pressione prevista nella città di Roma tra 33 ore vale: 1019 hPa
+La pressione prevista nella città di Roma tra 36 ore vale: 1020 hPa
+La pressione prevista nella città di Roma tra 39 ore vale: 1022 hPa
+La pressione prevista nella città di Roma tra 42 ore vale: 1023 hPa
+La pressione prevista nella città di Roma tra 45 ore vale: 1022 hPa
+La pressione prevista nella città di Roma tra 48 ore vale: 1023 hPa
+La pressione prevista nella città di Roma tra 51 ore vale: 1024 hPa
+La pressione prevista nella città di Roma tra 54 ore vale: 1024 hPa
+La pressione prevista nella città di Roma tra 57 ore vale: 1023 hPa
+La pressione prevista nella città di Roma tra 60 ore vale: 1023 hPa
+La pressione prevista nella città di Roma tra 63 ore vale: 1023 hPa
+La pressione prevista nella città di Roma tra 66 ore vale: 1023 hPa
+La pressione prevista nella città di Roma tra 69 ore vale: 1022 hPa
+La pressione prevista nella città di Roma tra 72 ore vale: 1021 hPa
+La pressione prevista nella città di Roma tra 75 ore vale: 1020 hPa
+La pressione prevista nella città di Roma tra 78 ore vale: 1020 hPa
+La pressione prevista nella città di Roma tra 81 ore vale: 1017 hPa
+La pressione prevista nella città di Roma tra 84 ore vale: 1016 hPa
+La pressione prevista nella città di Roma tra 87 ore vale: 1017 hPa
+La pressione prevista nella città di Roma tra 90 ore vale: 1016 hPa
+La pressione prevista nella città di Roma tra 93 ore vale: 1016 hPa
+La pressione prevista nella città di Roma tra 96 ore vale: 1015 hPa
+La pressione prevista nella città di Roma tra 99 ore vale: 1016 hPa
+La pressione prevista nella città di Roma tra 102 ore vale: 1016 hPa
+La pressione prevista nella città di Roma tra 105 ore vale: 1015 hPa
+La pressione prevista nella città di Roma tra 108 ore vale: 1015 hPa
+La pressione prevista nella città di Roma tra 111 ore vale: 1017 hPa
+La pressione prevista nella città di Roma tra 114 ore vale: 1018 hPa
+La pressione prevista nella città di Roma tra 117 ore vale: 1018 hPa
+La pressione prevista nella città di Roma tra 120 ore vale: 1019 hPa
