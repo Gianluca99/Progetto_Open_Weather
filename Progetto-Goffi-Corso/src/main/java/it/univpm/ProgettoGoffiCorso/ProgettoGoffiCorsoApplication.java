@@ -1,7 +1,6 @@
 package it.univpm.ProgettoGoffiCorso;
 
 import java.util.Scanner;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import it.univpm.ProgettoGoffiCorso.Stats.ValoriStatistici;
@@ -40,6 +39,7 @@ public class ProgettoGoffiCorsoApplication {
 			vett.setData(in.nextLine());
 			it.univpm.ProgettoGoffiCorso.Service.Historical.Storico(vett.getNome(), vett.getData());
 			break;
+			
 		case 4:
 			in = new Scanner(System.in);
 			System.out.println("Inserisci la città:");
@@ -48,8 +48,10 @@ public class ProgettoGoffiCorsoApplication {
 			vett.setData(in.nextLine());
 			vett.SetHistoricalVett();
 			vett.SetForecastVett();
+			
 			ValoriStatistici statF = new ValoriStatistici(vett.GetForecastVett());
 			ValoriStatistici statS = new ValoriStatistici(vett.GetHistoricalVett());
+						
 			System.out.println("Il valore minimo previsto vale: "+ statF.getValoreMin());
 			System.out.println("Il valore minimo storico vale: "+ statS.getValoreMin());
 			System.out.println("La media storica vale: "+ statS.getMedia());
@@ -57,6 +59,7 @@ public class ProgettoGoffiCorsoApplication {
 			System.out.println("La varianza storica vale: "+ statS.getVarianza());
 			System.out.println("La varianza prevista vale: "+ statF.getVarianza());
 			break;
+			
 		case 5:
 			System.out.println("Ciao!");
 			break;

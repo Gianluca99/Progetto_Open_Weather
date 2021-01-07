@@ -9,6 +9,7 @@ public class ValoriStatistici {
 	private double Media;
 	private double Varianza;
 	private double ValoreQM;
+	
 	public ValoriStatistici(Vector<Integer> vett) {
 		super();
 		setValoreMax(vett);

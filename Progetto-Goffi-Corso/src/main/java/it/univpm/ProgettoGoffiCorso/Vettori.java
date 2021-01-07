@@ -8,6 +8,8 @@ import Historical.HistoricalObject;
 public class Vettori extends Input {
 	public Vector<Integer> ForecastVett = new Vector<Integer>();
 	public Vector<Integer> HistoricalVett = new Vector<Integer>();
+	
+	
 	public Vettori(String nome, String data) {
 		super(nome, data);
 		

@@ -14,6 +14,7 @@ import Historical.HistoricalObject;
 
 public class Historical {
 	public static HistoricalObject H;
+	
 /*
 	static double lat(String City) throws Exception {
 		double lat = 0;
@@ -30,35 +31,40 @@ public class Historical {
 	 * 
 	 * @return void
 	 */
-	public static HistoricalObject Storico(String cityName, String data) throws Exception {
-		String dt = "";
-		String coord_API = "";
-		double[] coord = new double[2];
-		try {
-			dt = it.univpm.ProgettoGoffiCorso.Controller.Controller.Conversione_UNIX(data);
-			coord_API = it.univpm.ProgettoGoffiCorso.Controller.Controller.Coordinate(cityName);
-			com.google.gson.parsing.HistoricalParsing.ParsingCoord(coord_API);
-			coord[0] = com.google.gson.parsing.HistoricalParsing.GetLat();
-			coord[1] = com.google.gson.parsing.HistoricalParsing.GetLon();
-			
-			String API = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=" + coord[0] + "&lon="+ coord[1] + "&dt=" + dt;
-			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(API);
-			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
-			//ScritturaFileHistorical(cityName, data);
-			/*System.out.println("\n\nLa pressione storica nella città di " + cityName + " a partire dall' 01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:");
-			for (int i = 0; i < H.getHourly().size(); i++) {
-				System.out.println("\n " + H.getHourly().get(i).getPressure()+" hPa");
-			}*/
-			
-		}catch(IndexOutOfBoundsException e) {
-			Scanner in = new Scanner(System.in);
-			System.out.println("Città non trovata!\nInserisci una città valida: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
-			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome(), it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());
-		}
-		return H;
-	}
+	public static HistoricalObject Storico(String cityName, String data) throws Exception  {
+        String dt = "";
+        String coord_API = "";
+        double[] coord = new double[2];
+        try {
+            coord_API = it.univpm.ProgettoGoffiCorso.Controller.Controller.Coordinate(cityName);
+            com.google.gson.parsing.HistoricalParsing.ParsingCoord(coord_API);
+            coord[0] = com.google.gson.parsing.HistoricalParsing.GetLat();
+            coord[1] = com.google.gson.parsing.HistoricalParsing.GetLon();
+            dt = it.univpm.ProgettoGoffiCorso.Controller.Controller.Conversione_UNIX(data);
+            String API = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=" + coord[0] + "&lon="+ coord[1] + "&dt=" + dt;
+            String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(API);
+            H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
+            System.out.println("\n\nLa pressione storica nella città di " + cityName + " a partire dall' 01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:");
+            for (int i = 0; i < H.getHourly().size(); i++) {
+                System.out.println("\n " + H.getHourly().get(i).getPressure()+" hPa");
+            }
+        }catch (IndexOutOfBoundsException e) {
+                Scanner in = new Scanner(System.in);
+                System.out.println("Città non trovata!\nInserisci una città valida: ");
+                it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
+                Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome(),it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());
+        }catch (IOException e) {
+                Scanner in = new Scanner(System.in);
+                System.out.println("Data inserita nel formato errato!\nInserisci la data nel formato aaaa/mm/gg: ");
+                it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setData(in.nextLine());
+                Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome(),it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());
+            }
+            //ScritturaFileHistorical(cityName, data);
 
+           
+       
+        return H;
+    }
 	/**
 	 * Scrive in un file di testo i dati storici della pressione atmosferica
 	 * relativi alla città definita

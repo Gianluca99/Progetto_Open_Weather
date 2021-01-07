@@ -49,7 +49,7 @@ public class Current {
 		// double Pressure = (double) MainMap.get("pressure"); //dovrei avere il valore
 		// della pressione
 		//ScritturaFileCurrent(pressioneAttuale, APImap, MainMap, city);
-		//System.out.println("\nLa pressione attuale nella città di " + city + " vale: " + MainMap.get("pressure") + " hPa\n");
+		System.out.println("\nLa pressione attuale nella città di " + city + " vale: " + MainMap.get("pressure") + " hPa\n");
 		return MainMap;
 	}
 
