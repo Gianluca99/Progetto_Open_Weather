@@ -19,8 +19,8 @@ public class HistoricalParsing {
 	public static HistoricalObject historical;
 
 	/**
-	 * Converte il file json i un ArrayList di tipo CoordinateGeografiche. Serve per
-	 * ottenere le coordinate geografiche.
+	 * Converte il file json in un ArrayList di tipo CoordinateGeografiche. 
+	 * Serve per ottenere le coordinate geografiche.
 	 * 
 	 * @param dati --> sringa che contiene il json preso dalla chiamata API
 	 * 
@@ -37,7 +37,7 @@ public class HistoricalParsing {
 	 * 
 	 * @param dati --> sringa che contiene il json preso dalla chiamata API
 	 *
-	 * @return void
+	 * @return historical
 	 */
 	public static HistoricalObject parsing(String dati) {
 		historical = new Gson().fromJson(dati, HistoricalObject.class);

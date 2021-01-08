@@ -23,7 +23,7 @@ public class Forecast {
 	 * 
 	 * @param città
 	 * 
-	 * @return void
+	 * @return F --> oggetto di tipo forecastobject
 	 * 
 	 * @exception Exception
 	 */
@@ -33,10 +33,10 @@ public class Forecast {
 		try {
 			forecast = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
 		F = com.google.gson.parsing.ForecastParsing.parsing(forecast);
-		for (int i = 0; i < F.getList().size(); i++) {
+		/*for (int i = 0; i < F.getList().size(); i++) {
 			System.out.println("\nLa pressione prevista nella città di " + City + " tra " + ((i + 1) * 3) + " ore vale: "
 					+ F.getList().get(i).getMain().getPressure()+" hPa");
-		}
+		}*/
 		//ScritturaFileForecast(City);
 		} catch (Exception e) {
 			Scanner in = new Scanner(System.in);

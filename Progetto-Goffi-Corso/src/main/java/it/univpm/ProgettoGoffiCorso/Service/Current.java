@@ -16,13 +16,13 @@ import org.springframework.stereotype.Service;
 public class Current {
 	public static String pressioneAttuale = "";
 	/**
-	 * metodo in cui chiamanto il metoto "chiamataAPI" si crea il collegamneto con
+	 * metodo in cui chiamando il metodo "chiamataAPI" si crea il collegameneto con
 	 * OpenWeather e si scaricano i dati relativi alla città inserita dall'utente
 	 *
 	 * i dati vengono convertiti e scritti come stringhe in un file di testo tale
 	 * operazione viene effettuata dal metodo "ScritturaFile_current"
 	 *
-	 * @return void
+	 * @return pressioneattuale --> stringa contenente il json
 	 *
 	 * @exception Exception
 	 */
@@ -42,13 +42,24 @@ public class Current {
 		}
 		return pressioneAttuale;
 	}
+	
+	
+	/**
+	 * metodo in cui avviene il parsing della stringa json 
+	 * @return MainMap --> in cui è contenuta la pressione
+	 *
+	 * @exception Exception
+	 */
+	
+	
+	
 	public static Map<String, Object> CurrentMapping (String PressioneAttuale, String city) {
 		// vado a selezionare il JSONObject "main" dove ho la pressione attuale
 		Map<String, Object> APImap = com.google.gson.parsing.CurrentParsing.jsonToMap(pressioneAttuale.toString());
 		Map<String, Object> MainMap = com.google.gson.parsing.CurrentParsing.jsonToMap(APImap.get("main").toString());
 		// double Pressure = (double) MainMap.get("pressure"); //dovrei avere il valore
 		// della pressione
-		//ScritturaFileCurrent(pressioneAttuale, APImap, MainMap, city);
+		ScritturaFileCurrent(pressioneAttuale, APImap, MainMap, city);
 		System.out.println("\nLa pressione attuale nella città di " + city + " vale: " + MainMap.get("pressure") + " hPa\n");
 		return MainMap;
 	}

@@ -1,3 +1,8 @@
+/**
+ * Classe che si occupa della connessione con localhost della pressione storica
+ * @author A.Goffi, G.Corso
+ * */
+
 package it.univpm.ProgettoGoffiCorso.Controller;
 
 import java.util.Vector;
@@ -13,7 +18,12 @@ import it.univpm.ProgettoGoffiCorso.Stats.ValoriStatistici;
 public class HistoricalController {
 
 	private static Vettori h = it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett;
-
+	/**
+	 * Metodo pre i dati sulla pressione storica tramite la rotta historical
+	 * @param city
+	 * @param data
+	 * @return storico --> vettore contenente i dati storici
+	 * */
 	@RequestMapping("/historical")
 	public Vector<String> storic(@RequestParam String city, @RequestParam String data) throws Exception {
 		h.setNome(city);
@@ -28,6 +38,12 @@ public class HistoricalController {
 		return storico;
 	}
 
+	/**
+	 * Metodo pre i dati sulle statistiche tramite la rotta stat
+	 * @param city
+	 * @param data
+	 * @return Stosta --> vettore contenente le varie statistiche
+	 * */
 	@RequestMapping("/historical/stat")
 	public Vector<String> StatSto(@RequestParam String city, @RequestParam String data) throws Exception {
 		h.setNome(city);
@@ -35,10 +51,10 @@ public class HistoricalController {
 		h.SetHistoricalVett();
 		ValoriStatistici v = new ValoriStatistici(h.GetHistoricalVett());
 		Vector<String> StoSta = new Vector<String>();
-			StoSta.add(0, "Il valor Medio dei dati storici è: " + v.getMedia());
+			StoSta.add(0, "Il valor medio dei dati storici vale: " + v.getMedia());
 			StoSta.add(1, "La varianza vale: "+ v.getVarianza() );
-			StoSta.add(2, "la massima pressione registrata è stata di :" + v.getValoreMax() + " hPa");
-			StoSta.add(3, "La minima registrata è stata di :" + v.getValoreMin() + " hPa");
+			StoSta.add(2, "la massima pressione registrata vale:" + v.getValoreMax() + " hPa");
+			StoSta.add(3, "La minima registrata vale:" + v.getValoreMin() + " hPa");
 		return StoSta;
 	}
 }

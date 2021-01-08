@@ -12,10 +12,10 @@ public class ForecastParsing {
 
 	/**
 	 * conversione del file json in oggetto "ForecastObject" dove contiene i dati
-	 * utili. Serve per ottenere i dati delle previsioni meteo di una determinate
+	 * utili. Serve per ottenere i dati delle previsioni meteo di una determinata
 	 * città.
 	 * 
-	 * @param dati --> sringa che contiene il json preso dalla chiamata API
+	 * @param dati --> stringa che contiene il json preso dalla chiamata API
 	 * 
 	 * @return forecast
 	 */

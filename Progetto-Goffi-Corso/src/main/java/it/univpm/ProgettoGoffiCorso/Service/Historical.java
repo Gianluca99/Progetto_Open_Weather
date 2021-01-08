@@ -1,5 +1,5 @@
 /**
- * CLasse che si occupa dela gestione dei dati storici 
+ * CLasse che si occupa della gestione dei dati storici 
  * @author A.Goffi, G.Corso
  */
 package it.univpm.ProgettoGoffiCorso.Service;
@@ -23,13 +23,13 @@ public class Historical {
 
 	/**
 	 * viene richiamato il metodo per fornire le coordinate della città scelta
-	 * dall'utente, quello per la conversione della data in unità UNIIX entrambi
+	 * dall'utente e quello per la conversione della data in unità UNIIX entrambi
 	 * necessari per effettuare la chiamata all'API che fornisce i dati storici
 	 * 
 	 * @param cityName
 	 * @param data     --> data temporale da cui far partire lo storico dei dati
 	 * 
-	 * @return void
+	 * @return H --> oggetto di tipo historicalobject
 	 */
 	public static HistoricalObject Storico(String cityName, String data) throws Exception  {
         String dt = "";
@@ -45,9 +45,9 @@ public class Historical {
             String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(API);
             H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
             System.out.println("\n\nLa pressione storica nella città di " + cityName + " a partire dall' 01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:");
-            for (int i = 0; i < H.getHourly().size(); i++) {
+            /*for (int i = 0; i < H.getHourly().size(); i++) {
                 System.out.println("\n " + H.getHourly().get(i).getPressure()+" hPa");
-            }
+            }*/
         }catch (IndexOutOfBoundsException e) {
                 Scanner in = new Scanner(System.in);
                 System.out.println("Città non trovata!\nInserisci una città valida: ");

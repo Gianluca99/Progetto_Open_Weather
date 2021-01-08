@@ -11,13 +11,11 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Scanner;
-
 public class Controller {
 	private static URLConnection connessione;
 
 	/**
-	 * stabilesce una connessione con il sito fornito dall'API i dati vengono
+	 * stabilisce una connessione con il sito fornito dall'API i dati vengono
 	 * inseriti in una stringa "result"
 	 * 
 	 * @param API
@@ -84,6 +82,7 @@ public class Controller {
 	 *              coordinate
 	 * 
 	 * @return coord
+	 * @exception MalformedURLException
 	 */
 	public static String Coordinate(String City) throws Exception {
 		String key = "f044a8c15896675617344a49813d1a16";

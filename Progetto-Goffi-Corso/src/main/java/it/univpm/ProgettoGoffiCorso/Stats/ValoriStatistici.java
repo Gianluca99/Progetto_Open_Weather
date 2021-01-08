@@ -1,3 +1,7 @@
+/**
+ * CLasse che si occupa delle statistiche
+ * @author A.Goffi, G.Corso
+ */
 package it.univpm.ProgettoGoffiCorso.Stats;
 
 import java.util.Vector;
@@ -10,10 +14,16 @@ public class ValoriStatistici {
 	private double Varianza;
 	private double ValoreQM;
 	
+	/**
+	 *Chiamando il costruttore il vettore passato viene automaticamente
+	 *preso come input dai metodi set che generano le statistiche
+	 * @param vett --> vettore che conterrà o i dati relativi alle previsioni o quelli storici
+	 */
+	
+	
 	public ValoriStatistici(Vector<Integer> vett) {
 		super();
 		setValoreMax(vett);
-		
 		setValoreMin(vett);
 		setMedia(vett);
 		setVarianza(vett);

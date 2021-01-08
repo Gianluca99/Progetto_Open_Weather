@@ -1,5 +1,5 @@
 /**
- * Classe che si occupa del parsing del json relativo ai datti attuali 
+ * Classe che si occupa del parsing del json relativo ai dati attuali 
  * @author A.Goffi, G.Corso
  * */
 package com.google.gson.parsing;
