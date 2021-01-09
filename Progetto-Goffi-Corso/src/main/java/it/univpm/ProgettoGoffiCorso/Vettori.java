@@ -15,7 +15,7 @@ public class Vettori extends Input {
 		
 	}
 	public void SetForecastVett() throws Exception {
-		ForecastObject F = it.univpm.ProgettoGoffiCorso.Service.Forecast.PressioneFutura(this.Nome);
+		ForecastObject F = it.univpm.ProgettoGoffiCorso.Service.Prevista.PressioneFutura(this.Nome);
 		for (int i = 0; i < F.getList().size(); i++) {
 			ForecastVett.addElement(F.getList().get(i).getMain().getPressure());
 		}
@@ -26,7 +26,7 @@ public class Vettori extends Input {
 	}
 	
 	public void SetHistoricalVett() throws Exception {
-		HistoricalObject H = it.univpm.ProgettoGoffiCorso.Service.Historical.Storico(this.Nome, this.Data);
+		HistoricalObject H = it.univpm.ProgettoGoffiCorso.Service.Storica.Storico(this.Nome, this.Data);
 		for (int i = 0; i < H.getHourly().size(); i++) {
 			this.HistoricalVett.addElement( H.getHourly().get(i).getPressure());
 		}

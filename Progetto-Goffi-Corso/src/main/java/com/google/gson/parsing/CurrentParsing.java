@@ -17,7 +17,11 @@ public class CurrentParsing {
 	 * 
 	 */
 	public static PressioneAttuale parsing(String str) {
+		try {
 		PA= new Gson().fromJson(str, PressioneAttuale.class);
+		} catch (Exception e) {
+		    it.univpm.ProgettoGoffiCorso.Controller.CurrentController.ErrorPage (e); 
+		}
 		return PA;
 	}
 }

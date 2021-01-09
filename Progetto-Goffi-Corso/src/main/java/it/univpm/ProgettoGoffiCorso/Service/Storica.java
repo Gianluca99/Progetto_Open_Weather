@@ -17,7 +17,7 @@ import com.google.gson.Gson;
 import Annata.*;
 import Historical.HistoricalObject;
 
-public class Historical {
+public class Storica {
 	public static HistoricalObject H;
 
 
@@ -40,7 +40,7 @@ public class Historical {
 		String dt = "";
 		String coord_API = "";
 		double[] coord = new double[2];
-		try {
+
 			coord_API = it.univpm.ProgettoGoffiCorso.Controller.Controller.Coordinate(cityName);
 			com.google.gson.parsing.HistoricalParsing.ParsingCoord(coord_API);
 			coord[0] = com.google.gson.parsing.HistoricalParsing.GetLat();
@@ -50,25 +50,26 @@ public class Historical {
 					+ coord[1] + "&dt=" + dt;
 			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(API);
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
-			System.out.println("\n\nLa pressione storica nella città di " + cityName
+			/*System.out.println("\n\nLa pressione storica nella città di " + cityName
 					+ " a partire dall' 01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:");
-			/*
-			 * for (int i = 0; i < H.getHourly().size(); i++) { System.out.println("\n " +
-			 * H.getHourly().get(i).getPressure()+" hPa"); }
+			
+			 for (int i = 0; i < H.getHourly().size(); i++) { System.out.println("\n " +
+			 H.getHourly().get(i).getPressure()+" hPa"); }
 			 */
-		} catch (IndexOutOfBoundsException e) {
-			Scanner in = new Scanner(System.in);
+		
+			/*Scanner in = new Scanner(System.in);
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
 			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
 			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome(),
-					it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());
-		} catch (IOException e) {
-			Scanner in = new Scanner(System.in);
+					it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());*/
+		
+			
+			/*Scanner in = new Scanner(System.in);
 			System.out.println("Data inserita nel formato errato!\nInserisci la data nel formato aaaa/mm/gg: ");
 			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setData(in.nextLine());
 			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome(),
-					it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());
-		}
+					it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());*/
+		
 		// ScritturaFileHistorical(cityName, data);
 
 		return H;

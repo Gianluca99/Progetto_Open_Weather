@@ -20,7 +20,10 @@ public class ForecastParsing {
 	 * @return forecast
 	 */
 	public static ForecastObject parsing(String dati) {
+		try {
 		forecast = new Gson().fromJson(dati, ForecastObject.class);// Parsing dei dati Json a tipo Forecast//
+		}catch(Exception e) {
+			it.univpm.ProgettoGoffiCorso.Controller.ForecastController.ErrorPage(e);}
 		return forecast;
 	}
 }

@@ -11,6 +11,11 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Vector;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
 public class Controller {
 	private static URLConnection connessione;
 
@@ -104,4 +109,24 @@ public class Controller {
 
 		return coord;
 	}
+	
+	@RequestMapping("/Welcome")
+	public Vector<String> Benvenuto() {
+		Vector<String> vettore = new Vector<String>(); 	
+		 vettore.add(0, "Benvenuto!");
+		 vettore.add(1, "/MetaCurrent?city= -> Per conoscere i metadati relativi al meteo corrente(parametro città);");
+		 vettore.add(2, "/Current?city= -> Per conoscere il dato sulla pressione corrente(parametro città);");
+		 vettore.add(3, "/MetaForecast?city= -> Per conoscere i metadati relativi alle previsioni per i prossimi 5 giorni(parametro città);");
+		 vettore.add(4, "/Forecast?city= -> Per conoscere i dati relativi alla pressione prevista per i prossimi 5 giorni(parametro città);");
+		 vettore.add(5, "/Forecast/Stat?city= -> Per conoscere le statistiche relative alla pressione prevista per i prossimi 5 giorni(parametro città);");
+		 vettore.add(6,"/MetaHistorical?city=&data= -> Per conoscere i metadati relativi al meteo del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(7,"/Historical?city=&data= -> Per conoscere i dati relativi alla pressione del giorni precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(8,"/Historical/Stat?city=&data= -> Per conoscere le statistiche relative alla pressione del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(9,"/Annata -> Per conoscere le statistiche relative alla pressione degli anni precedenti;");
+		 vettore.add(10,"/Annata/(parametro anno) -> Per filtrare gli anni precedenti in base all'anno;");
+		 vettore.add(11,"/Annata/(parametro città) -> Per filtrare gli anni precedenti in base alla città.");
+			 	return vettore;
+				
+	}
+	
 }

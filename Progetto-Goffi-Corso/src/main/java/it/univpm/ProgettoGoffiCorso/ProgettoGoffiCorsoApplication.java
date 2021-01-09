@@ -23,14 +23,14 @@ public class ProgettoGoffiCorsoApplication {
 			in = new Scanner(System.in);
 			System.out.println("Inserisci la città:");
 			vett.setNome(in.nextLine());
-			it.univpm.ProgettoGoffiCorso.Service.Current.PressioneAttuale(vett.getNome());
+			it.univpm.ProgettoGoffiCorso.Service.Corrente.PressioneAttuale(vett.getNome());
 			break;
 		
 		case 2:
 			in = new Scanner(System.in);
 			System.out.println("Inserisci la città:");
 			vett.setNome(in.nextLine());
-			it.univpm.ProgettoGoffiCorso.Service.Forecast.PressioneFutura(vett.getNome());
+			it.univpm.ProgettoGoffiCorso.Service.Prevista.PressioneFutura(vett.getNome());
 			break;
 		
 		case 3:
@@ -39,7 +39,7 @@ public class ProgettoGoffiCorsoApplication {
 			vett.setNome(in.nextLine());
 			System.out.println("Inserisci la data nel formato: aaaa/mm/gg");
 			vett.setData(in.nextLine());
-			it.univpm.ProgettoGoffiCorso.Service.Historical.Storico(vett.getNome(), vett.getData());
+			it.univpm.ProgettoGoffiCorso.Service.Storica.Storico(vett.getNome(), vett.getData());
 			break;
 			
 		case 4:

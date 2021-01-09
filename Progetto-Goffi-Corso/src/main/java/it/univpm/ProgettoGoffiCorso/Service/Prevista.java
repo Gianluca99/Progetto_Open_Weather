@@ -11,10 +11,11 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import Forecast.*;
 @Service
-public class Forecast {
+public class Prevista {
 	public static ForecastObject F;
 	/**
 	 * metodo in cui viene richiamati i metodi per aprire la connessione con API,
@@ -30,7 +31,7 @@ public class Forecast {
 	public static ForecastObject PressioneFutura(String City) throws Exception {
 		String api = "http://api.openweathermap.org/data/2.5/forecast?q=" + City;
 		String forecast = "";
-		try {
+		
 			forecast = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
 		F = com.google.gson.parsing.ForecastParsing.parsing(forecast);
 		/*for (int i = 0; i < F.getList().size(); i++) {
@@ -38,12 +39,12 @@ public class Forecast {
 					+ F.getList().get(i).getMain().getPressure()+" hPa");
 		}*/
 		//ScritturaFileForecast(City);
-		} catch (Exception e) {
-			Scanner in = new Scanner(System.in);
+		
+			/*Scanner in = new Scanner(System.in);
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
 			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
-			it.univpm.ProgettoGoffiCorso.Service.Forecast.PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome());
-		}
+			it.univpm.ProgettoGoffiCorso.Service.Forecast.PressioneFutura(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome());*/
+		
 		return F;
 	}
 

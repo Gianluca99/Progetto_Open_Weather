@@ -5,10 +5,12 @@
 
 package it.univpm.ProgettoGoffiCorso.Controller;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Vector;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -33,9 +35,9 @@ public class HistoricalController {
 	
 	private static Vettori h = it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett;
 	
-	@RequestMapping("/metaHistorical")
+	@RequestMapping("/MetaHistorical")
 	public HistoricalObject metadati(@RequestParam String city, @RequestParam String data) throws Exception {
-		return	it.univpm.ProgettoGoffiCorso.Service.Historical.Storico(city, data);
+		return	it.univpm.ProgettoGoffiCorso.Service.Storica.Storico(city, data);
 	}
 	
 	/**
@@ -58,7 +60,7 @@ public class HistoricalController {
 	 * @param data
 	 * @return Stosta --> vettore contenente le varie statistiche
 	 * */
-	@RequestMapping("/historical/stat")
+	@RequestMapping("/Historical/Stat")
 	public ValoriStatistici StatSto(@RequestParam String city, @RequestParam String data) throws Exception {
 		h.setNome(city);
 		h.setData(data);
@@ -67,17 +69,26 @@ public class HistoricalController {
 		return v;
 	}
 	
-	@RequestMapping("/annate")
+	@ExceptionHandler(RuntimeException.class)
+    public static String ErrorPage(RuntimeException e) {
+        return "Città non inserita o non trovata!";
+    }
+	@ExceptionHandler(Exception.class)
+    public static String ErrorPage(Exception ex) {
+        return "Data non inserita o non trovata!";
+    }
+	
+	@RequestMapping("/Annate")
 	public List<Anno> annate(){
 		return L.getAnnateList();
 	}
-	@GetMapping("/annate/{anno}")
+	@GetMapping("/Annate/{anno}")
 	@ResponseBody
 	public Anno filtroanno(@PathVariable Integer anno){
 		return L.getAnnateList(anno);
 	}
 	
-	@RequestMapping("/annate/{name}")
+	@RequestMapping("/Annate/{name}")
 	@ResponseBody
 	public Anno filtronome(@PathVariable String name){
 		return L.getAnnateList(name);

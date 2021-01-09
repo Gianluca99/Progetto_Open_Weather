@@ -27,8 +27,12 @@ public class HistoricalParsing {
 	 * @return void
 	 */
 	public static void ParsingCoord(String dati) {
+		try {
 		Type CoordinateList = new TypeToken<ArrayList<CoordinateGeografiche>>() {}.getType();
 		coordinate = new Gson().fromJson(dati, CoordinateList);
+		} catch (IndexOutOfBoundsException | NullPointerException e) {
+			it.univpm.ProgettoGoffiCorso.Controller.HistoricalController.ErrorPage(e);
+		}
 	}
 
 	/**
@@ -40,7 +44,10 @@ public class HistoricalParsing {
 	 * @return historical
 	 */
 	public static HistoricalObject parsing(String dati) {
+		try {
 		historical = new Gson().fromJson(dati, HistoricalObject.class);
+		} catch (Exception e) {
+			it.univpm.ProgettoGoffiCorso.Controller.HistoricalController.ErrorPage(e);}
 		return historical;
 	}
 

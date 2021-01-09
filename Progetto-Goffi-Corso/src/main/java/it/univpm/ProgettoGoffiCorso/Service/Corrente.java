@@ -9,10 +9,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
 import Current.PressioneAttuale;
 
 @Service
-public class Current {
+public class Corrente {
 	public static String pressioneAttuale = "";
 	/**
 	 * metodo in cui chiamando il metodo "chiamataAPI" si crea il collegameneto con
@@ -29,17 +31,16 @@ public class Current {
 		String api = "http://api.openweathermap.org/data/2.5/weather?q=" + city;
 		Scanner in = new Scanner(System.in);
 		PressioneAttuale PA = new PressioneAttuale() ;
-		try {
-			pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
+			 pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
 			 PA =com.google.gson.parsing.CurrentParsing.parsing(pressioneAttuale);
 
-			ScritturaFileCurrent(city, PA);
+			//ScritturaFileCurrent(city, PA);
 
-		} catch (Exception e) {
-			System.out.println("Città non trovata!\nInserisci una città valida: ");
+		
+			/*System.out.println("Città non trovata!\nInserisci una città valida: ");
 			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
-			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome());
-		}
+			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome());*/
+		
 		return PA;
 	}
 
