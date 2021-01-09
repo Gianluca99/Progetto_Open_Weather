@@ -7,10 +7,9 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Map;
 import java.util.Scanner;
-
 import org.springframework.stereotype.Service;
+import Current.PressioneAttuale;
 
 @Service
 public class Current {
@@ -26,60 +25,32 @@ public class Current {
 	 *
 	 * @exception Exception
 	 */
-	public static String PressioneAttuale(String city) throws Exception {
+	public static PressioneAttuale PressioneAttuale(String city) throws Exception {
 		String api = "http://api.openweathermap.org/data/2.5/weather?q=" + city;
 		Scanner in = new Scanner(System.in);
+		PressioneAttuale PA = new PressioneAttuale() ;
 		try {
-			// prendo la string result dove ho tutti i dati dalla chiamata API
-			// pressioneAttuale == result
 			pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
-			CurrentMapping( pressioneAttuale,city);
+			 PA =com.google.gson.parsing.CurrentParsing.parsing(pressioneAttuale);
+
+			ScritturaFileCurrent(city, PA);
 
 		} catch (Exception e) {
 			System.out.println("Città non trovata!\nInserisci una città valida: ");
 			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
 			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome());
 		}
-		return pressioneAttuale;
-	}
-	
-	
-	/**
-	 * metodo in cui avviene il parsing della stringa json 
-	 * @return MainMap --> in cui è contenuta la pressione
-	 *
-	 * @exception Exception
-	 */
-	
-	
-	
-	public static Map<String, Object> CurrentMapping (String PressioneAttuale, String city) {
-		// vado a selezionare il JSONObject "main" dove ho la pressione attuale
-		Map<String, Object> APImap = com.google.gson.parsing.CurrentParsing.jsonToMap(pressioneAttuale.toString());
-		Map<String, Object> MainMap = com.google.gson.parsing.CurrentParsing.jsonToMap(APImap.get("main").toString());
-		// double Pressure = (double) MainMap.get("pressure"); //dovrei avere il valore
-		// della pressione
-		ScritturaFileCurrent(pressioneAttuale, APImap, MainMap, city);
-		System.out.println("\nLa pressione attuale nella città di " + city + " vale: " + MainMap.get("pressure") + " hPa\n");
-		return MainMap;
+		return PA;
 	}
 
+
 	/**
-	 * Genera un file dove viene salvato il nome della città con la pressione
-	 * attuale ad ogni chiamata aggiunge le nuove informazioni sensa sovrascrivere
-	 * il file generato precedentemente
-	 * 
-	 * @param dati  --> stringa che contiene i dati da salvare
-	 * @param JsonT --> JSONObject completo dato dal sito
-	 * @param main  --> JSONObject che contiene solo il main dove si trova la
-	 *              pressione
 	 * 
 	 * @return void
 	 * 
 	 * @exception IOException
 	 */
-	public static void ScritturaFileCurrent(String dati, Map<String, Object> JsonT, Map<String, Object> main,
-			String city) {
+	public static void ScritturaFileCurrent(String city, PressioneAttuale pa) {
 		File writer = new File("DatiAttuali.txt");
 		try {
 			if (!writer.exists()) {
@@ -88,9 +59,8 @@ public class Current {
 			}
 
 			FileWriter fileWriter = new FileWriter(writer, true);
-
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			bufferedWriter.write("\nLa pressione attuale nella città di " + city + " vale: " + main.get("pressure") + " hPa\n");
+			bufferedWriter.write("\nLa pressione attuale nella città di " + city + " vale: " +pa.getMain().getPressure() + " hPa\n");
 			bufferedWriter.close();
 			System.out.println("Pressione aggiunta al file!");
 

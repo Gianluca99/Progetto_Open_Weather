@@ -3,6 +3,8 @@ package it.univpm.ProgettoGoffiCorso;
 import java.util.Scanner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import Annata.AnnoList;
 import it.univpm.ProgettoGoffiCorso.Stats.ValoriStatistici;
 
 @SpringBootApplication
@@ -60,7 +62,10 @@ public class ProgettoGoffiCorsoApplication {
 			System.out.println("La varianza prevista vale: "+ statF.getVarianza());
 			break;
 			
-		case 5:
+		case 5 :
+			AnnoList L = new AnnoList();
+			break;
+		case 6:
 			System.out.println("Ciao!");
 			break;
 		

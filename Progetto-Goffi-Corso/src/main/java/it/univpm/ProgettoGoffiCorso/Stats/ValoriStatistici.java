@@ -1,5 +1,5 @@
 /**
- * CLasse che si occupa delle statistiche
+ * Classe che si occupa delle statistiche
  * @author A.Goffi, G.Corso
  */
 package it.univpm.ProgettoGoffiCorso.Stats;
