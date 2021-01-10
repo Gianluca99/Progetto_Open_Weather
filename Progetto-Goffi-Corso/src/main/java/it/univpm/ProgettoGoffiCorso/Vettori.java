@@ -28,7 +28,7 @@ public class Vettori extends Input {
 	public void SetHistoricalVett() throws Exception {
 		HistoricalObject H = it.univpm.ProgettoGoffiCorso.Service.Storica.Storico(this.Nome, this.Data);
 		for (int i = 0; i < H.getHourly().size(); i++) {
-			this.HistoricalVett.addElement( H.getHourly().get(i).getPressure());
+			this.HistoricalVett.addElement(H.getHourly().get(i).getPressure());
 		}
 	}
 

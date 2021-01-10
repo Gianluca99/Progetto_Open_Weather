@@ -88,12 +88,12 @@ public class HistoricalController {
 		return L.getAnnateList(anno);
 	}
 	
-	@RequestMapping("/Annate/{name}")
+	@RequestMapping("/Annate/{name}/{anno}")
 	@ResponseBody
-	public Anno filtronome(@PathVariable String name){
-		return L.getAnnateList(name);
+	public Anno filtronome(@PathVariable String name, @PathVariable Integer anno){
+		return L.getAnnateList(name, anno);
 	}
-	@RequestMapping(method = RequestMethod.POST, value ="/annate")
+	@RequestMapping(method = RequestMethod.POST, value ="/Annate")
 	public String addannate(@RequestBody Anno anno){
 		L.addAnnateList(anno);
 		return "ok!";

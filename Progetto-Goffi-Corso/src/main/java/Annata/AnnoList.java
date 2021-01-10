@@ -52,12 +52,12 @@ public class AnnoList extends Anno{
 	 * 
 	 * */
 	public Anno getAnnateList(Integer anno) {
-		return annateList.stream().filter(a -> a.getAnno().equals(anno)).findFirst().get();
+		return annateList.stream().filter(a -> a.getAnno().equals(anno)).findAny().get();
+		
 	}
 	
-	public Anno getAnnateList(String name) {
-		//String nome = name;
-		return annateList.stream().filter(a -> a.getName().equals(name)).findFirst().get();
+	public Anno getAnnateList(String name, Integer anno) {
+		return annateList.stream().filter(a -> a.getName().equals(name) && a.getAnno().equals(anno)).findAny().get();
 	}
 	/**
 	 * @param annateList the annateList to set

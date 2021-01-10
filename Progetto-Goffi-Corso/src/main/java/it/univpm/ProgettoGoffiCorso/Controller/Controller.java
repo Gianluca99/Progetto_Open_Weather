@@ -119,12 +119,12 @@ public class Controller {
 		 vettore.add(3, "/MetaForecast?city= -> Per conoscere i metadati relativi alle previsioni per i prossimi 5 giorni(parametro città);");
 		 vettore.add(4, "/Forecast?city= -> Per conoscere i dati relativi alla pressione prevista per i prossimi 5 giorni(parametro città);");
 		 vettore.add(5, "/Forecast/Stat?city= -> Per conoscere le statistiche relative alla pressione prevista per i prossimi 5 giorni(parametro città);");
-		 vettore.add(6,"/MetaHistorical?city=&data= -> Per conoscere i metadati relativi al meteo del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(7,"/Historical?city=&data= -> Per conoscere i dati relativi alla pressione del giorni precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(8,"/Historical/Stat?city=&data= -> Per conoscere le statistiche relative alla pressione del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(9,"/Annata -> Per conoscere le statistiche relative alla pressione degli anni precedenti;");
-		 vettore.add(10,"/Annata/(parametro anno) -> Per filtrare gli anni precedenti in base all'anno;");
-		 vettore.add(11,"/Annata/(parametro città) -> Per filtrare gli anni precedenti in base alla città.");
+		 vettore.add(6,	"/MetaHistorical?city=&data= -> Per conoscere i metadati relativi al meteo del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(7,	"/Historical?city=&data= -> Per conoscere i dati relativi alla pressione del giorni precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(8,	"/Historical/Stat?city=&data= -> Per conoscere le statistiche relative alla pressione del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(9,	"/Annate -> Per conoscere le statistiche relative alla pressione degli anni precedenti;");
+		 vettore.add(10,"/Annate/anno) -> Per filtrare gli anni precedenti in base all'anno;");
+		 vettore.add(11,"/Annate/città/anno -> Per filtrare gli anni precedenti in base alla città e l'anno.");
 			 	return vettore;
 				
 	}
