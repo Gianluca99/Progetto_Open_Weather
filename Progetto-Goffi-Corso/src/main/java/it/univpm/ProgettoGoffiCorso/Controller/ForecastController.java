@@ -10,16 +10,20 @@ import java.io.IOException;
 import java.util.Vector;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
 import Forecast.ForecastObject;
+import it.univpm.ProgettoGoffiCorso.Stats.Soglia;
 import it.univpm.ProgettoGoffiCorso.Stats.ValoriStatistici;
 
 @RestController
 public class ForecastController {
 
-	private static ForecastObject F = new ForecastObject();
+	public static ForecastObject F = new ForecastObject();
 
 	@RequestMapping("/MetaForecast")
 	public ForecastObject metadati(@RequestParam String city) throws Exception {
@@ -40,6 +44,15 @@ public class ForecastController {
 		 Vett.addElement( F.getList().get(i).getMain().getPressure());
 		}
 		return Vett;
+	}
+	
+	@RequestMapping("/Forecast/{nome}/{soglia}")
+	@ResponseBody
+	public Soglia filtroSoglia(@PathVariable String nome, @PathVariable int soglia) throws Exception {
+		F = it.univpm.ProgettoGoffiCorso.Service.Prevista.PressioneFutura(nome);
+		Soglia s = new Soglia(soglia, F);
+		return s;
+	
 	}
 	
 	/**
