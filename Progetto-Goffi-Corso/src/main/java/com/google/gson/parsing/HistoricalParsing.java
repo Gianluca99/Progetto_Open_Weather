@@ -1,14 +1,15 @@
 /**
  * CLasse che si occupa del parsing del json dei dati storici e del json delle coordinate geografiche 
- * @author A.Goffi, G.Corso
+ * @author A.Goffi
+ * @author G.Corso
  */
 package com.google.gson.parsing;
 
 import java.util.ArrayList;
+import java.io.FileNotFoundException;
 import java.lang.reflect.Type;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
 import Historical.CoordinateGeografiche;
 import Historical.HistoricalObject;
 
@@ -26,15 +27,15 @@ public class HistoricalParsing {
 	 * 
 	 * @return void
 	 */
-	public static void ParsingCoord(String dati) {
+	public static void ParsingCoord(String dati) throws FileNotFoundException {
 		try {
 		Type CoordinateList = new TypeToken<ArrayList<CoordinateGeografiche>>() {}.getType();
 		coordinate = new Gson().fromJson(dati, CoordinateList);
-		} catch (IndexOutOfBoundsException | NullPointerException e) {
+		}
+		catch(IndexOutOfBoundsException e) {
 			it.univpm.ProgettoGoffiCorso.Controller.HistoricalController.ErrorPage(e);
 		}
 	}
-
 	/**
 	 * Converte il json in un oggetto "HistoricalObject". Serve per ottenere i dati
 	 * storici utili.
@@ -43,11 +44,8 @@ public class HistoricalParsing {
 	 *
 	 * @return historical
 	 */
-	public static HistoricalObject parsing(String dati) {
-		try {
+	public static HistoricalObject parsing(String dati) throws IndexOutOfBoundsException {
 		historical = new Gson().fromJson(dati, HistoricalObject.class);
-		} catch (Exception e) {
-			it.univpm.ProgettoGoffiCorso.Controller.HistoricalController.ErrorPage(e);}
 		return historical;
 	}
 

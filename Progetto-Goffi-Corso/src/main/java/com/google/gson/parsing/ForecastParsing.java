@@ -1,10 +1,12 @@
 /**
  * CLasse che si occupa del parsing del json relativo ai dati predetti
- * @author A.Goffi, G.Corso
+ * @author A.Goffi
+ * @author G.Corso
  * */
 package com.google.gson.parsing;
 
 import Forecast.*;
+import java.io.FileNotFoundException;
 import com.google.gson.Gson;
 
 public class ForecastParsing {
@@ -19,11 +21,10 @@ public class ForecastParsing {
 	 * 
 	 * @return forecast
 	 */
-	public static ForecastObject parsing(String dati) {
-		try {
+	public static ForecastObject parsing(String dati) throws FileNotFoundException {
+		
 		forecast = new Gson().fromJson(dati, ForecastObject.class);// Parsing dei dati Json a tipo Forecast//
-		}catch(Exception e) {
-			it.univpm.ProgettoGoffiCorso.Controller.ForecastController.ErrorPage(e);}
+
 		return forecast;
 	}
 }

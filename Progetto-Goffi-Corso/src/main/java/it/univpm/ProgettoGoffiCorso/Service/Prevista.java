@@ -8,13 +8,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
-
-import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-
 import Forecast.*;
-@Service
+
 public class Prevista {
 	public static ForecastObject F;
 	/**
@@ -32,7 +27,7 @@ public class Prevista {
 		String api = "http://api.openweathermap.org/data/2.5/forecast?q=" + City;
 		String forecast = "";
 		
-			forecast = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
+			forecast = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(api);
 		F = com.google.gson.parsing.ForecastParsing.parsing(forecast);
 		/*for (int i = 0; i < F.getList().size(); i++) {
 			System.out.println("\nLa pressione prevista nella città di " + City + " tra " + ((i + 1) * 3) + " ore vale: "

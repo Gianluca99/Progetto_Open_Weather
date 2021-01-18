@@ -8,13 +8,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-
-import com.google.gson.Gson;
-
-import Annata.*;
 import Historical.HistoricalObject;
 
 public class Storica {
@@ -41,14 +34,14 @@ public class Storica {
 		String coord_API = "";
 		double[] coord = new double[2];
 
-			coord_API = it.univpm.ProgettoGoffiCorso.Controller.Controller.Coordinate(cityName);
+			coord_API = it.univpm.ProgettoGoffiCorso.Controller.APIController.Coordinate(cityName);
 			com.google.gson.parsing.HistoricalParsing.ParsingCoord(coord_API);
 			coord[0] = com.google.gson.parsing.HistoricalParsing.GetLat();
 			coord[1] = com.google.gson.parsing.HistoricalParsing.GetLon();
-			dt = it.univpm.ProgettoGoffiCorso.Controller.Controller.Conversione_UNIX(data);
+			dt = it.univpm.ProgettoGoffiCorso.Controller.APIController.Conversione_UNIX(data);
 			String API = "https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=" + coord[0] + "&lon="
 					+ coord[1] + "&dt=" + dt;
-			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(API);
+			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(API);
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
 			/*System.out.println("\n\nLa pressione storica nella città di " + cityName
 					+ " a partire dall' 01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:");

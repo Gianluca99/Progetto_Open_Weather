@@ -2,12 +2,9 @@
 package Current;
 
 import java.util.List;
-
-import org.springframework.stereotype.Service;
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-@Service
+
 public class PressioneAttuale {
 
     @SerializedName("coord")

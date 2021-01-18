@@ -2,15 +2,8 @@ package Annata;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
-
-import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 
-import com.google.gson.Gson;
-
-@Service
 public class AnnoList extends Anno{
 	private List<Anno> annateList ;
 

@@ -3,21 +3,24 @@
  *		*Connessione con OpenWeather 
  *		*Conversione della data da AAAA/MM/GG a UNIX
  *		*Cordinate Geografiche di un'Indirizzo/Città 
- * @author A.Goffi, G.Corso
+ * @author A.Goffi
+ * @author G.Corso
  * */
 package it.univpm.ProgettoGoffiCorso.Controller;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Vector;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 @RestController
-public class Controller {
+public class APIController {
 	private static URLConnection connessione;
+	private static String Key;
 
 	/**
 	 * stabilisce una connessione con il sito fornito dall'API i dati vengono
@@ -30,12 +33,12 @@ public class Controller {
 	 * @throws MalformedURLException
 	 * 
 	 */
-	public static String chiamataAPI(String API) throws Exception {
+	public static String chiamataAPI(String API) throws IOException {
 
-		String key = "f044a8c15896675617344a49813d1a16";
+	
 		String result = "";
 		try {
-			URL url = new URL(API + "&appid=" + key);
+			URL url = new URL(API + "&appid=" + Key);
 			connessione = url.openConnection();
 			BufferedReader rd = new BufferedReader(new InputStreamReader(connessione.getInputStream()));
 			String line;
@@ -89,11 +92,10 @@ public class Controller {
 	 * @return coord
 	 * @exception MalformedURLException
 	 */
-	public static String Coordinate(String City) throws Exception {
-		String key = "f044a8c15896675617344a49813d1a16";
+	public static String Coordinate(String City) throws IOException {
 		String coord = "";
 		try {
-			URL url = new URL("http://api.openweathermap.org/geo/1.0/direct?q=" + City + "&limit=1&appid=" + key);
+			URL url = new URL("http://api.openweathermap.org/geo/1.0/direct?q=" + City + "&limit=1&appid=" + Key);
 			connessione = url.openConnection();
 			BufferedReader rd = new BufferedReader(new InputStreamReader(connessione.getInputStream()));
 			String line;
@@ -113,20 +115,25 @@ public class Controller {
 	@RequestMapping("/Welcome")
 	public Vector<String> Benvenuto() {
 		Vector<String> vettore = new Vector<String>(); 	
-		 vettore.add(0, "Benvenuto!");
-		 vettore.add(1, "/MetaCurrent?city= -> Per conoscere i metadati relativi al meteo corrente(parametro città);");
-		 vettore.add(2, "/Current?city= -> Per conoscere il dato sulla pressione corrente(parametro città);");
-		 vettore.add(3, "/MetaForecast?city= -> Per conoscere i metadati relativi alle previsioni per i prossimi 5 giorni(parametro città);");
-		 vettore.add(4, "/Forecast?city= -> Per conoscere i dati relativi alla pressione prevista per i prossimi 5 giorni(parametro città);");
-		 vettore.add(5, "/Forecast/Stat?city= -> Per conoscere le statistiche relative alla pressione prevista per i prossimi 5 giorni(parametro città);");
-		 vettore.add(6,	"/MetaHistorical?city=&data= -> Per conoscere i metadati relativi al meteo del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(7,	"/Historical?city=&data= -> Per conoscere i dati relativi alla pressione del giorni precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(8,	"/Historical/Stat?city=&data= -> Per conoscere le statistiche relative alla pressione del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(9,	"/Annate -> Per conoscere le statistiche relative alla pressione degli anni precedenti;");
-		 vettore.add(10,"/Annate/anno) -> Per filtrare gli anni precedenti in base all'anno;");
-		 vettore.add(11,"/Annate/città/anno -> Per filtrare gli anni precedenti in base alla città e l'anno.");
+		 vettore.add(0,  "Benvenuto!");
+		 vettore.add(1,  "/key -> Per inserire l'API_Key per usufruire dei servizi di OpenWeather, una possibile chiave è: f044a8c15896675617344a49813d1a16");
+		 vettore.add(2,  "/MetaCurrent?city= -> Per conoscere i metadati relativi al meteo corrente(parametro città);");
+		 vettore.add(3,  "/Current?city= -> Per conoscere il dato sulla pressione corrente(parametro città);");
+		 vettore.add(4,  "/MetaForecast?city= -> Per conoscere i metadati relativi alle previsioni per i prossimi 5 giorni(parametro città);");
+		 vettore.add(5,  "/Forecast?city= -> Per conoscere i dati relativi alla pressione prevista per i prossimi 5 giorni(parametro città);");
+		 vettore.add(6,  "/Forecast/Stat?city= -> Per conoscere le statistiche relative alla pressione prevista per i prossimi 5 giorni(parametro città);");
+		 vettore.add(7,	 "/MetaHistorical?city=&data= -> Per conoscere i metadati relativi al meteo del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(8,	 "/Historical?city=&data= -> Per conoscere i dati relativi alla pressione del giorni precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(9,	 "/Historical/Stat?city=&data= -> Per conoscere le statistiche relative alla pressione del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(10, "/Annate -> Per conoscere le statistiche relative alla pressione degli anni precedenti;");
+		 vettore.add(11, "/Annate/anno) -> Per filtrare gli anni precedenti in base all'anno;");
+		 vettore.add(12, "/Annate/città/anno -> Per filtrare gli anni precedenti in base alla città e l'anno.");
 			 	return vettore;
 				
 	}
-	
+	@RequestMapping(value="/key", method = RequestMethod.POST)
+	public static  String addKey(@RequestBody String chiave) {
+		Key = chiave;
+		return "La Chiave è stata inserita";
+	}
 }

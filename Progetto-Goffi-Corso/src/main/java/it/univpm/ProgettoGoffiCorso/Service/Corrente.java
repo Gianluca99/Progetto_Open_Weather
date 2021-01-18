@@ -3,17 +3,14 @@
  * @author A.Goffi, G.Corso
  * */
 package it.univpm.ProgettoGoffiCorso.Service;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-
 import Current.PressioneAttuale;
 
-@Service
 public class Corrente {
 	public static String pressioneAttuale = "";
 	/**
@@ -31,16 +28,10 @@ public class Corrente {
 		String api = "http://api.openweathermap.org/data/2.5/weather?q=" + city;
 		Scanner in = new Scanner(System.in);
 		PressioneAttuale PA = new PressioneAttuale() ;
-			 pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.Controller.chiamataAPI(api);
+			 pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(api);
 			 PA =com.google.gson.parsing.CurrentParsing.parsing(pressioneAttuale);
 
 			//ScritturaFileCurrent(city, PA);
-
-		
-			/*System.out.println("Città non trovata!\nInserisci una città valida: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
-			PressioneAttuale(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome());*/
-		
 		return PA;
 	}
 
