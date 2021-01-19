@@ -6,9 +6,9 @@ import Forecast.ForecastObject;
 
 
 public class Soglia {
-	private static Vector <Integer> v;
-	
+	Vector<Integer> v = new Vector<Integer>();
 	public Soglia(int soglia, ForecastObject f) {
+		v.clear();
 		setFiltro(soglia, f);
 	}
 

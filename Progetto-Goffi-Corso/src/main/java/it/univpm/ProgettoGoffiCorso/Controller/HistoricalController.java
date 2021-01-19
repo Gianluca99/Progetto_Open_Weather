@@ -17,15 +17,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import Annata.Anno;
-import Annata.AnnoList;
+
 import Historical.HistoricalObject;
-import it.univpm.ProgettoGoffiCorso.Stats.ValoriStatistici;
+import it.univpm.ProgettoGoffiCorso.Stats.HistoricalStats;
+
 
 @RestController
 public class HistoricalController {
 
-	private static AnnoList L = new AnnoList();
+	//private static AnnoList L = new AnnoList();
 	private static HistoricalObject H ;
 
 	@RequestMapping("/MetaHistorical")
@@ -58,17 +58,12 @@ public class HistoricalController {
 	 * @return Stosta --> vettore contenente le varie statistiche
 	 */
 	@RequestMapping("/Historical/Stat")
-	public ValoriStatistici StatSto(@RequestParam String city, @RequestParam String data) throws Exception {
-		H = it.univpm.ProgettoGoffiCorso.Service.Storica.Storico(city, data);
-		 Vector<Integer> HistoricalVett = new Vector<Integer>();
-			for (int i = 0; i < H.getHourly().size(); i++) {
-				HistoricalVett.addElement(H.getHourly().get(i).getPressure());
-			}
-		ValoriStatistici v = new ValoriStatistici(HistoricalVett);
-		return v;
+	public HistoricalStats StatSto(@RequestParam String city, @RequestParam String data) throws Exception {
+		HistoricalStats stats = new HistoricalStats(city, data);
+		return stats;
 	}
 
-	@RequestMapping("/Annate")
+	/*@RequestMapping("/Annate")
 	public List<Anno> annate() {
 		return L.getAnnateList();
 	}
@@ -89,7 +84,7 @@ public class HistoricalController {
 	public String addannate(@RequestBody Anno anno) {
 		L.addAnnateList(anno);
 		return "ok!";
-	}
+	}*/
 
 		
 	@ExceptionHandler(IndexOutOfBoundsException.class)

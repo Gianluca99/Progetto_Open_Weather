@@ -17,8 +17,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import Forecast.ForecastObject;
+import it.univpm.ProgettoGoffiCorso.Stats.ForecastStats;
 import it.univpm.ProgettoGoffiCorso.Stats.Soglia;
-import it.univpm.ProgettoGoffiCorso.Stats.ValoriStatistici;
+
 
 @RestController
 public class ForecastController {
@@ -62,14 +63,9 @@ public class ForecastController {
 	 * @return StaPre --> vettore contenente le varie statistiche
 	 */
 	@RequestMapping("/Forecast/Stat")
-	public ValoriStatistici StaPrev(@RequestParam String city) throws Exception {
-		F = it.univpm.ProgettoGoffiCorso.Service.Prevista.PressioneFutura(city);
-		Vector<Integer> ForecastVett = new Vector<Integer>();
-		for(int i =0; i<F.getList().size();i++) {
-		ForecastVett.addElement( F.getList().get(i).getMain().getPressure());
-		}
-		ValoriStatistici v = new ValoriStatistici(ForecastVett);
-		return v;
+	public ForecastStats StaPrev(@RequestParam String city) throws Exception {
+		ForecastStats f = new ForecastStats(city);
+		return f;
 	}
 
 	@ExceptionHandler(FileNotFoundException.class)
