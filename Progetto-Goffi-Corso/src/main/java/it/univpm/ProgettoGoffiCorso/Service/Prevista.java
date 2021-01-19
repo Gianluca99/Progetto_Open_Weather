@@ -13,13 +13,13 @@ import Forecast.*;
 public class Prevista {
 	public static ForecastObject F;
 	/**
-	 * metodo in cui viene richiamati i metodi per aprire la connessione con API,
+	 * metodo in cui vengono richiamati i metodi per aprire la connessione con API,
 	 * per fare il parsing del file json scaricato e per scrivere su un file di
-	 * testo i dati relativi alle previsioni della pressione atmosferica.
+	 * testo i dati relativi alle previsioni sulla pressione atmosferica.
 	 * 
 	 * @param città
 	 * 
-	 * @return F --> oggetto di tipo forecastobject
+	 * @return F --> oggetto di tipo ForecastObject
 	 * 
 	 * @exception Exception
 	 */
@@ -29,13 +29,12 @@ public class Prevista {
 		
 			forecast = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(api);
 		F = com.google.gson.parsing.ForecastParsing.parsing(forecast);
-		ScritturaFileForecast(City);
+		//ScritturaFileForecast(City);
 		return F;
 	}
 
 	/**
-	 * inserisce nel file Dati.txt i dati delle previsioni della pressione relativa
-	 * alla città inserita
+	 * Metodo per salvare i dati relativi alle previsioni su un file di testo
 	 * 
 	 * @param City
 	 * 

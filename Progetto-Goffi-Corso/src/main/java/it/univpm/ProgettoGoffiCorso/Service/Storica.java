@@ -12,22 +12,15 @@ import Historical.HistoricalObject;
 
 public class Storica {
 	public static HistoricalObject H;
-
-
-	/*
-	 * static double lat(String City) throws Exception { double lat = 0; return lat;
-	 * }
-	 */
-
 	/**
 	 * viene richiamato il metodo per fornire le coordinate della città scelta
-	 * dall'utente e quello per la conversione della data in unità UNIIX entrambi
+	 * dall'utente e quello per la conversione della data in unità UNIX entrambi
 	 * necessari per effettuare la chiamata all'API che fornisce i dati storici
 	 * 
 	 * @param cityName
 	 * @param data     --> data temporale da cui far partire lo storico dei dati
 	 * 
-	 * @return H --> oggetto di tipo historicalobject
+	 * @return H --> oggetto di tipo HistoricalObject
 	 */
 	public static HistoricalObject Storico(String cityName, String data) throws Exception {
 		String dt = "";
@@ -43,7 +36,7 @@ public class Storica {
 					+ coord[1] + "&dt=" + dt;
 			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(API);
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
-			ScritturaFileHistorical(cityName, data);
+			//ScritturaFileHistorical(cityName, data);
 
 		return H;
 	}

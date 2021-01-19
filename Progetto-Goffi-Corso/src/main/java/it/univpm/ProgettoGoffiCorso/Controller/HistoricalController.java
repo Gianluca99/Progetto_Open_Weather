@@ -29,14 +29,17 @@ public class HistoricalController {
 	private static AnnoList L = new AnnoList();
 	private static HistoricalObject H ;
 
+	/** Rotta che restituisce i metadati in formato json sulla pressione storica
+	 * @param city -> nome della città
+	 * @param data 
+	**/
 	@RequestMapping("/MetaHistorical")
 	public HistoricalObject metadati(@RequestParam String city, @RequestParam String data) throws Exception {
 		return it.univpm.ProgettoGoffiCorso.Service.Storica.Storico(city, data);
 	}
 
 	/**
-	 * Metodo pre i dati sulla pressione storica tramite la rotta historical
-	 * 
+	 * Rotta che restituisce i dati sulla pressione storica 
 	 * @param city
 	 * @param data
 	 * @return storico --> vettore contenente i dati storici
@@ -52,8 +55,7 @@ public class HistoricalController {
 	}
 
 	/**
-	 * Metodo pre i dati sulle statistiche tramite la rotta stat
-	 * 
+	 * Rotta che resituisce le statistiche sui dati storici
 	 * @param city
 	 * @param data
 	 * @return Stosta --> vettore contenente le varie statistiche
@@ -63,11 +65,18 @@ public class HistoricalController {
 		HistoricalStats stats = new HistoricalStats(city, data);
 		return stats;
 	}
+	
+	/** Rotta che restituisce i dati relativi alla pressione degli anni precedenti
+	**/
 
 	@RequestMapping("/Annate")
 	public List<Anno> annate() {
 		return L.getAnnateList();
 	}
+	
+	/** Rotta che permette di filtrare i dati degli anni precedenti in base all'anno
+	 * @param anno
+	**/
 
 	@GetMapping("/Annate/{anno}")
 	@ResponseBody
@@ -75,23 +84,36 @@ public class HistoricalController {
 		return L.getAnnateList(anno);
 	}
 
+	/** Rotta che permette di filtrare i dati degli anni precedenti in base al nome della città e all'anno
+	 * @param name
+	 * @param anno 
+	**/
 	@RequestMapping("/Annate/{name}/{anno}")
 	@ResponseBody
 	public Anno filtronome(@PathVariable String name, @PathVariable Integer anno) {
 		return L.getAnnateList(name, anno);
 	}
 
+	/** Metodo che consente di aggiungere annate precedenti all'interno del data base
+	**/
 	@RequestMapping(method = RequestMethod.POST, value = "/Annate")
 	public String addannate(@RequestBody Anno anno) {
 		L.addAnnateList(anno);
 		return "ok!";
 	}
-
+	
+	/** Gestione eccezioni nel caso di città non esistente
+	 * @param IndexOutOfBoundException ex
+	**/
 		
 	@ExceptionHandler(IndexOutOfBoundsException.class)
 	public static String ErrorPage(IndexOutOfBoundsException ex) {
 		return "Città non trovata!";
 	}
+	
+	/** Gestione eccezioni nel caso di città, data o API key non inserita.
+	 * @param IOException ex
+	**/
 
 	@ExceptionHandler(IOException.class)
 	public static String IOExManage(IOException e) {

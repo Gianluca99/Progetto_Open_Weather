@@ -13,9 +13,8 @@ public class ForecastParsing {
 	public static ForecastObject forecast;
 
 	/**
-	 * conversione del file json in oggetto "ForecastObject" dove contiene i dati
-	 * utili. Serve per ottenere i dati delle previsioni meteo di una determinata
-	 * città.
+	 * Tramite il gson convertiamo la stringa json in un oggetto Java di tipo ForecastObject
+	 *  per poterlo gestire all'interno del programma.
 	 * 
 	 * @param dati --> stringa che contiene il json preso dalla chiamata API
 	 * 

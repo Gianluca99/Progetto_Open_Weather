@@ -25,6 +25,9 @@ import it.univpm.ProgettoGoffiCorso.Stats.ForecastStats;
 public class ForecastController {
 
 	public static ForecastObject F = new ForecastObject();
+	/** Rotta che restituisce i metadati in formato json sulle previsioni
+	 * @param city -> nome della città
+	**/
 
 	@RequestMapping("/MetaForecast")
 	public ForecastObject metadati(@RequestParam String city) throws Exception {
@@ -33,9 +36,8 @@ public class ForecastController {
 	}
 
 	/**
-	 * Metodo pre i dati sulla pressione prevista tramite la rotta forecast
-	 * 
-	 * @param city
+	 * Rotta che restituisce i dati in formato json sulle previsioni
+	 * @param city -> nome della città
 	 */
 	@RequestMapping("/Forecast")
 	public Vector<Integer> previsione(@RequestParam String city) throws Exception {
@@ -47,6 +49,11 @@ public class ForecastController {
 		return Vett;
 	}
 	
+	/** Rotta che permette di filtrare le previsioni in base ad una soglia di errore in hPa
+	 * @param city -> nome della città
+	 * @param soglia -> soglia d'errore
+	**/
+	
 	@RequestMapping("/Forecast/{nome}/{soglia}")
 	@ResponseBody
 	public RangeFilters filtroSoglia(@PathVariable String nome, @PathVariable int soglia) throws Exception {
@@ -56,10 +63,8 @@ public class ForecastController {
 	
 	}
 	
-	/**
-	 * Metodo pre i dati sulle statistiche tramite la rotta stat
-	 * 
-	 * @param city
+	/** Rotta che restituisce le statistiche sulle previsioni
+	 * @param city -> nome della città
 	 * @return StaPre --> vettore contenente le varie statistiche
 	 */
 	@RequestMapping("/Forecast/Stat")
@@ -67,12 +72,18 @@ public class ForecastController {
 		ForecastStats f = new ForecastStats(city);
 		return f;
 	}
-
+	
+	/** Gestione eccezioni nel caso di città non esistente
+	 * @param FileNotFoundException
+	**/
 	@ExceptionHandler(FileNotFoundException.class)
 	public static String ErrorPage(FileNotFoundException ex) {
 		return "Città non trovata!";
 	}
 
+	/** Gestione eccezioni nel caso di città o API key non inserita
+	 * @param IOException
+	**/
 	@ExceptionHandler(IOException.class)
 	public static String IOExManage(IOException e) {
 		String S = "";
@@ -82,6 +93,10 @@ public class ForecastController {
 			S = "API_Key non inserita";
 		return S;
 	}
+	/** Gestione eccezioni nel caso di soglia minore o uguale a 0
+	 * @param IllegalArgumentException
+	**/
+	
 	@ExceptionHandler(IllegalArgumentException.class)
 	public static String ErrorPage(IllegalArgumentException ex) {
 		return "Soglia negativa o uguale a zero, NON VALIDA!";

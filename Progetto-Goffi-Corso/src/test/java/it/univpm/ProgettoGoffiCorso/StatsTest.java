@@ -1,5 +1,5 @@
 /**
- * Classe che si occupa dei test relativi alla classe ValoriStatistici
+ * Classe che si occupa dei test relativi alla classe Stats
  * @author A.Goffi
  * @author G.Corso
  * */

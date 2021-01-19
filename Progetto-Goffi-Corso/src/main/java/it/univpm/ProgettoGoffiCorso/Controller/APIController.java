@@ -23,7 +23,7 @@ public class APIController {
 	private static String Key;
 
 	/**
-	 * stabilisce una connessione con il sito fornito dall'API i dati vengono
+	 * stabilisce una connessione con il sito fornito dall'API, i dati vengono
 	 * inseriti in una stringa "result"
 	 * 
 	 * @param API
@@ -82,7 +82,7 @@ public class APIController {
 	}
 
 	/**
-	 * inserendo un indirizzo fornisce le coordinate geografiche e la traduzone in
+	 * inserendo un indirizzo fornisce le coordinate geografiche e la traduzione in
 	 * varie lingue (vedere classe oggetto)
 	 * 
 	 * 
@@ -107,10 +107,13 @@ public class APIController {
 		} catch (MalformedURLException e) {
 			System.out.println("Errore di connessione! :(");
 		}
-		// System.out.println("file scaricato per le coordinate :"+coord);
 
 		return coord;
 	}
+	
+	/**
+	 * Rotta che fornisce un menù dotato di link e descrizioni delle varie richieste web.
+	 */
 	
 	@RequestMapping("/Welcome")
 	public Vector<String> Benvenuto() {
@@ -132,6 +135,11 @@ public class APIController {
 			 	return vettore;
 				
 	}
+	
+	/**
+	 * Rotta che consente di modificare la key per le chiamate API.
+	 */
+	
 	@RequestMapping(value="/key", method = RequestMethod.POST)
 	public static  String addKey(@RequestBody String chiave) {
 		Key = chiave;

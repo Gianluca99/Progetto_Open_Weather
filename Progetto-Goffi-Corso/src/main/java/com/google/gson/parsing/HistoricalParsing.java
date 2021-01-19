@@ -23,7 +23,7 @@ public class HistoricalParsing {
 	 * Converte il file json in un ArrayList di tipo CoordinateGeografiche. 
 	 * Serve per ottenere le coordinate geografiche.
 	 * 
-	 * @param dati --> sringa che contiene il json preso dalla chiamata API
+	 * @param dati --> stringa che contiene il json preso dalla chiamata API
 	 * 
 	 * @return void
 	 */
@@ -37,10 +37,10 @@ public class HistoricalParsing {
 		}
 	}
 	/**
-	 * Converte il json in un oggetto "HistoricalObject". Serve per ottenere i dati
-	 * storici utili.
+	 * Tramite il gson convertiamo la stringa json in un oggetto Java di tipo PressioneAttuale
+	 *  per poterlo gestire all'interno del programma.
 	 * 
-	 * @param dati --> sringa che contiene il json preso dalla chiamata API
+	 * @param dati --> stringa che contiene il json preso dalla chiamata API
 	 *
 	 * @return historical
 	 */
