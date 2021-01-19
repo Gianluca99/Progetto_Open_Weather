@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import com.google.gson.Gson;
 
 import Current.CurrentObject;
-import Current.CurrentObject;
+
 
 public class CurrentParsing {
  public static CurrentObject PA ;

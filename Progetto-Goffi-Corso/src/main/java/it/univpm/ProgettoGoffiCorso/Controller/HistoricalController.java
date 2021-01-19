@@ -33,6 +33,7 @@ public class HistoricalController {
 	/** Rotta che restituisce i metadati in formato json sulla pressione storica
 	 * @param city -> nome della città
 	 * @param data 
+	 * @return HistoricalObject
 	**/
 	@RequestMapping("/MetaHistorical")
 	public HistoricalObject metadati(@RequestParam String city, @RequestParam String data) throws Exception {

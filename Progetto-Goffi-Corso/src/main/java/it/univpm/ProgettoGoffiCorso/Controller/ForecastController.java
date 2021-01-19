@@ -27,6 +27,7 @@ public class ForecastController {
 	public static ForecastObject F = new ForecastObject();
 	/** Rotta che restituisce i metadati in formato json sulle previsioni
 	 * @param city -> nome della città
+	 * @return ForecastObject
 	**/
 
 	@RequestMapping("/MetaForecast")
@@ -38,6 +39,7 @@ public class ForecastController {
 	/**
 	 * Rotta che restituisce i dati in formato json sulle previsioni
 	 * @param city -> nome della città
+	 * @return Vett
 	 */
 	@RequestMapping("/Forecast")
 	public Vector<Integer> previsione(@RequestParam String city) throws Exception {
@@ -52,6 +54,7 @@ public class ForecastController {
 	/** Rotta che permette di filtrare le previsioni in base ad una soglia di errore in hPa
 	 * @param city -> nome della città
 	 * @param soglia -> soglia d'errore
+	 * @return s
 	**/
 	
 	@RequestMapping("/Forecast/{nome}/{soglia}")
@@ -65,7 +68,7 @@ public class ForecastController {
 	
 	/** Rotta che restituisce le statistiche sulle previsioni
 	 * @param city -> nome della città
-	 * @return StaPre --> vettore contenente le varie statistiche
+	 * @return f --> oggetto statistiche
 	 */
 	@RequestMapping("/Forecast/Stat")
 	public ForecastStats StaPrev(@RequestParam String city) throws Exception {
