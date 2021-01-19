@@ -36,13 +36,4 @@ public class HistoricalStats extends Stats{
 			v.addElement(H.getHourly().get(i).getPressure());
 		}
 	}
-	public static void setV(String city, String data) throws Exception {
-		H = it.univpm.ProgettoGoffiCorso.Service.Storica.Storico(city, data);
-		for (int i = 0; i < H.getHourly().size(); i++) {
-			v.addElement(H.getHourly().get(i).getPressure());
-		}
-	}
-
-
-
 }
