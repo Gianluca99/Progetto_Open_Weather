@@ -130,7 +130,7 @@ public class APIController {
 		 vettore.add(9,	 "/Historical?city=&data= -> Per conoscere i dati relativi alla pressione del giorni precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
 		 vettore.add(10, "/Historical/Stat?city=&data= -> Per conoscere le statistiche relative alla pressione del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
 		 vettore.add(11, "/Annate -> Per conoscere le statistiche relative alla pressione degli anni precedenti;");
-		 vettore.add(12, "/Annate/anno) -> Per filtrare gli anni precedenti in base all'anno;");
+		 vettore.add(12, "/Annate/anno -> Per filtrare gli anni precedenti in base all'anno;");
 		 vettore.add(13, "/Annate/città/anno -> Per filtrare gli anni precedenti in base alla città e l'anno.");
 			 	return vettore;
 				

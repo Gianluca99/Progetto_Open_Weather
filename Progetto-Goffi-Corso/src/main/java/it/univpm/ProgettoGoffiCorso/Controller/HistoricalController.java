@@ -7,6 +7,7 @@ package it.univpm.ProgettoGoffiCorso.Controller;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Vector;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,7 +43,7 @@ public class HistoricalController {
 	 * Rotta che restituisce i dati sulla pressione storica 
 	 * @param city
 	 * @param data
-	 * @return storico --> vettore contenente i dati storici
+	 * @return HistoricalVett --> vettore contenente i dati storici
 	 */
 	@RequestMapping("/Historical")
 	public Vector<Integer> storic(@RequestParam String city, @RequestParam String data) throws Exception {
@@ -58,7 +59,7 @@ public class HistoricalController {
 	 * Rotta che resituisce le statistiche sui dati storici
 	 * @param city
 	 * @param data
-	 * @return Stosta --> vettore contenente le varie statistiche
+	 * @return stats --> vettore contenente le varie statistiche
 	 */
 	@RequestMapping("/Historical/Stat")
 	public HistoricalStats StatSto(@RequestParam String city, @RequestParam String data) throws Exception {
@@ -80,7 +81,7 @@ public class HistoricalController {
 
 	@GetMapping("/Annate/{anno}")
 	@ResponseBody
-	public Anno filtroanno(@PathVariable Integer anno) {
+	public Anno filtroanno(@PathVariable Integer anno) throws NoSuchElementException{
 		return L.getAnnateList(anno);
 	}
 
@@ -90,7 +91,7 @@ public class HistoricalController {
 	**/
 	@RequestMapping("/Annate/{name}/{anno}")
 	@ResponseBody
-	public Anno filtronome(@PathVariable String name, @PathVariable Integer anno) {
+	public Anno filtronome(@PathVariable String name, @PathVariable Integer anno) throws NoSuchElementException{
 		return L.getAnnateList(name, anno);
 	}
 
@@ -102,10 +103,19 @@ public class HistoricalController {
 		return "ok!";
 	}
 	
+	/** Gestione eccezioni nel caso di città o anno non esistente
+	 * @param NoSuchElementException ex
+	**/
+	
+	@ExceptionHandler(NoSuchElementException.class)
+	public static String ErrorPage(NoSuchElementException ex) {
+		return "Dato inesistente!";
+	}
+	
 	/** Gestione eccezioni nel caso di città non esistente
 	 * @param IndexOutOfBoundException ex
 	**/
-		
+	
 	@ExceptionHandler(IndexOutOfBoundsException.class)
 	public static String ErrorPage(IndexOutOfBoundsException ex) {
 		return "Città non trovata!";
