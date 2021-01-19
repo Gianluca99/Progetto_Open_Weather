@@ -1,5 +1,5 @@
 /**
- * CLasse che si occupa del parsing del json dei dati storici e del json delle coordinate geografiche 
+ * CLasse che si occupa del parsing del json dei dati storici e del json delle coordinate geografiche
  * @author A.Goffi
  * @author G.Corso
  */
@@ -20,27 +20,28 @@ public class HistoricalParsing {
 	public static HistoricalObject historical;
 
 	/**
-	 * Converte il file json in un ArrayList di tipo CoordinateGeografiche. 
-	 * Serve per ottenere le coordinate geografiche.
-	 * 
-	 * @param dati --> sringa che contiene il json preso dalla chiamata API
-	 * 
+	 * Converte il file json in un ArrayList di tipo CoordinateGeografiche. Serve
+	 * per ottenere le coordinate geografiche.
+	 *
+	 * @param dati --> stringa che contiene il json preso dalla chiamata API
+	 *
 	 * @return void
 	 */
 	public static void ParsingCoord(String dati) throws FileNotFoundException {
 		try {
-		Type CoordinateList = new TypeToken<ArrayList<CoordinateGeografiche>>() {}.getType();
-		coordinate = new Gson().fromJson(dati, CoordinateList);
-		}
-		catch(IndexOutOfBoundsException e) {
+			Type CoordinateList = new TypeToken<ArrayList<CoordinateGeografiche>>() {
+			}.getType();
+			coordinate = new Gson().fromJson(dati, CoordinateList);
+		} catch (IndexOutOfBoundsException e) {
 			it.univpm.ProgettoGoffiCorso.Controller.HistoricalController.ErrorPage(e);
 		}
 	}
+
 	/**
-	 * Converte il json in un oggetto "HistoricalObject". Serve per ottenere i dati
-	 * storici utili.
-	 * 
-	 * @param dati --> sringa che contiene il json preso dalla chiamata API
+	 * Tramite il gson convertiamo la stringa json in un oggetto Java di tipo
+	 * PressioneAttuale per poterlo gestire all'interno del programma.
+	 *
+	 * @param dati --> stringa che contiene il json preso dalla chiamata API
 	 *
 	 * @return historical
 	 */

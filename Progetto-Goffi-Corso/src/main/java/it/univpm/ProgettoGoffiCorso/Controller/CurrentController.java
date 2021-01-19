@@ -13,28 +13,46 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import Current.PressioneAttuale;
-
-
+import Current.CurrentObject;
 
 @RestController
-public class CurrentController {	
-	
-	@RequestMapping ("/MetaCurrent") 
-	public PressioneAttuale metadati (@RequestParam String city) throws Exception {
-		 return it.univpm.ProgettoGoffiCorso.Service.Corrente.PressioneAttuale(city);
-		}
-	
-	@RequestMapping ("/Current") 
-	public Integer current (@RequestParam String city) throws Exception {
+public class CurrentController {
+
+	/**
+	 * Rotta che restituisce i metadati in formato json sulla pressione corrente
+	 * 
+	 * @param city -> nome della città
+	 **/
+	@RequestMapping("/MetaCurrent")
+	public CurrentObject metadati(@RequestParam String city) throws Exception {
+		return it.univpm.ProgettoGoffiCorso.Service.Corrente.PressioneAttuale(city);
+	}
+
+	/**
+	 * Rotta che restituisce i dati in formato json sulla pressione corrente
+	 * 
+	 * @param city -> nome della città
+	 **/
+	@RequestMapping("/Current")
+	public Integer current(@RequestParam String city) throws Exception {
 		return it.univpm.ProgettoGoffiCorso.Service.Corrente.PressioneAttuale(city).getMain().getPressure();
-		}
-	
+	}
+
+	/**
+	 * Gestione delle eccezioni nel caso di città non esistente.
+	 * 
+	 * @param FileNotFoundException e
+	 **/
 	@ExceptionHandler(FileNotFoundException.class)
 	public static String ErrorPage(FileNotFoundException ex) {
 		return "Città non trovata!";
 	}
 
+	/**
+	 * Gestione delle eccezioni nel caso di città o API key non inserita.
+	 * 
+	 * @param IOException e
+	 **/
 	@ExceptionHandler(IOException.class)
 	public static String IOExManage(IOException e) {
 		String S = "";
@@ -44,6 +62,5 @@ public class CurrentController {
 			S = "API_Key non inserita";
 		return S;
 	}
-	
+
 }
-	

@@ -1,3 +1,8 @@
+/**
+ * Classe che estende la superclasse Stats e genera le statistiche relative alle previsioni
+ * @author A.Goffi
+ * @author G.Corso
+ * */
 package it.univpm.ProgettoGoffiCorso.Stats;
 
 import java.util.Vector;
@@ -20,7 +25,12 @@ public class ForecastStats extends Stats{
 	}
 
 
-
+	/**
+	 * Metodo che salva in un vettore v i dati relativi alla pressione prevista dal ForecastObject.
+	 * Tale vettore verrà poi passato ai metodi della superclasse che genera le statistiche.
+	 * @param city
+	 * @throws Exception
+	 */
 	public static void setV(String city) throws Exception {
 		F = it.univpm.ProgettoGoffiCorso.Service.Prevista.PressioneFutura(city);
 		for(int i =0; i<F.getList().size();i++) {

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class AnnoList extends HistoricalFilters{
 	
 
-	/**
+	/** Crea l'oggetto Anno dove contiene i dai statistici storici di ogni mese 
 	 * @param annateList
 	 */
 	public AnnoList() {

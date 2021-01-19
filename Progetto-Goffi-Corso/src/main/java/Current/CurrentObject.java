@@ -5,7 +5,7 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class PressioneAttuale {
+public class CurrentObject {
 
     @SerializedName("coord")
     @Expose
@@ -54,7 +54,7 @@ public class PressioneAttuale {
      * No args constructor for use in serialization
      * 
      */
-    public PressioneAttuale() {
+    public CurrentObject() {
     }
 
     /**
@@ -74,7 +74,7 @@ public class PressioneAttuale {
      * @param base
      * @param wind
      */
-    public PressioneAttuale(Coord coord, List<Weather> weather, String base, Main main, Integer visibility, Wind wind, Rain rain, Clouds clouds, Integer dt, Sys sys, Integer timezone, Integer id, String name, Integer cod) {
+    public CurrentObject(Coord coord, List<Weather> weather, String base, Main main, Integer visibility, Wind wind, Rain rain, Clouds clouds, Integer dt, Sys sys, Integer timezone, Integer id, String name, Integer cod) {
         super();
         this.coord = coord;
         this.weather = weather;
@@ -100,7 +100,7 @@ public class PressioneAttuale {
         this.coord = coord;
     }
 
-    public PressioneAttuale withCoord(Coord coord) {
+    public CurrentObject withCoord(Coord coord) {
         this.coord = coord;
         return this;
     }
@@ -113,7 +113,7 @@ public class PressioneAttuale {
         this.weather = weather;
     }
 
-    public PressioneAttuale withWeather(List<Weather> weather) {
+    public CurrentObject withWeather(List<Weather> weather) {
         this.weather = weather;
         return this;
     }
@@ -126,7 +126,7 @@ public class PressioneAttuale {
         this.base = base;
     }
 
-    public PressioneAttuale withBase(String base) {
+    public CurrentObject withBase(String base) {
         this.base = base;
         return this;
     }
@@ -139,7 +139,7 @@ public class PressioneAttuale {
         this.main = main;
     }
 
-    public PressioneAttuale withMain(Main main) {
+    public CurrentObject withMain(Main main) {
         this.main = main;
         return this;
     }
@@ -152,7 +152,7 @@ public class PressioneAttuale {
         this.visibility = visibility;
     }
 
-    public PressioneAttuale withVisibility(Integer visibility) {
+    public CurrentObject withVisibility(Integer visibility) {
         this.visibility = visibility;
         return this;
     }
@@ -165,7 +165,7 @@ public class PressioneAttuale {
         this.wind = wind;
     }
 
-    public PressioneAttuale withWind(Wind wind) {
+    public CurrentObject withWind(Wind wind) {
         this.wind = wind;
         return this;
     }
@@ -178,7 +178,7 @@ public class PressioneAttuale {
         this.rain = rain;
     }
 
-    public PressioneAttuale withRain(Rain rain) {
+    public CurrentObject withRain(Rain rain) {
         this.rain = rain;
         return this;
     }
@@ -191,7 +191,7 @@ public class PressioneAttuale {
         this.clouds = clouds;
     }
 
-    public PressioneAttuale withClouds(Clouds clouds) {
+    public CurrentObject withClouds(Clouds clouds) {
         this.clouds = clouds;
         return this;
     }
@@ -204,7 +204,7 @@ public class PressioneAttuale {
         this.dt = dt;
     }
 
-    public PressioneAttuale withDt(Integer dt) {
+    public CurrentObject withDt(Integer dt) {
         this.dt = dt;
         return this;
     }
@@ -217,7 +217,7 @@ public class PressioneAttuale {
         this.sys = sys;
     }
 
-    public PressioneAttuale withSys(Sys sys) {
+    public CurrentObject withSys(Sys sys) {
         this.sys = sys;
         return this;
     }
@@ -230,7 +230,7 @@ public class PressioneAttuale {
         this.timezone = timezone;
     }
 
-    public PressioneAttuale withTimezone(Integer timezone) {
+    public CurrentObject withTimezone(Integer timezone) {
         this.timezone = timezone;
         return this;
     }
@@ -243,7 +243,7 @@ public class PressioneAttuale {
         this.id = id;
     }
 
-    public PressioneAttuale withId(Integer id) {
+    public CurrentObject withId(Integer id) {
         this.id = id;
         return this;
     }
@@ -256,7 +256,7 @@ public class PressioneAttuale {
         this.name = name;
     }
 
-    public PressioneAttuale withName(String name) {
+    public CurrentObject withName(String name) {
         this.name = name;
         return this;
     }
@@ -269,7 +269,7 @@ public class PressioneAttuale {
         this.cod = cod;
     }
 
-    public PressioneAttuale withCod(Integer cod) {
+    public CurrentObject withCod(Integer cod) {
         this.cod = cod;
         return this;
     }
