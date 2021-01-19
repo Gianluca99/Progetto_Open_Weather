@@ -12,11 +12,11 @@ public class ForecastStats extends Stats{
 	public ForecastStats(String city) throws Exception {
 		super();
 		setV(city);
-		super.setValMax(v);
-		super.setValMin(v);
+		super.setValoreMax(v);
+		super.setValoreMin(v);
 		super.setMedia(v);
-		super.setValQM(v);
-		super.setVar(v);	
+		super.setVarianza(v);	
+		super.setValoreQM(v);
 	}
 
 

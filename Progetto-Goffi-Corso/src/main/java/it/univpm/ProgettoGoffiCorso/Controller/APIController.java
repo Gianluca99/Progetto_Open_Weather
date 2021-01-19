@@ -122,12 +122,13 @@ public class APIController {
 		 vettore.add(4,  "/MetaForecast?city= -> Per conoscere i metadati relativi alle previsioni per i prossimi 5 giorni(parametro città);");
 		 vettore.add(5,  "/Forecast?city= -> Per conoscere i dati relativi alla pressione prevista per i prossimi 5 giorni(parametro città);");
 		 vettore.add(6,  "/Forecast/Stat?city= -> Per conoscere le statistiche relative alla pressione prevista per i prossimi 5 giorni(parametro città);");
-		 vettore.add(7,	 "/MetaHistorical?city=&data= -> Per conoscere i metadati relativi al meteo del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(8,	 "/Historical?city=&data= -> Per conoscere i dati relativi alla pressione del giorni precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(9,	 "/Historical/Stat?city=&data= -> Per conoscere le statistiche relative alla pressione del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
-		 vettore.add(10, "/Annate -> Per conoscere le statistiche relative alla pressione degli anni precedenti;");
-		 vettore.add(11, "/Annate/anno) -> Per filtrare gli anni precedenti in base all'anno;");
-		 vettore.add(12, "/Annate/città/anno -> Per filtrare gli anni precedenti in base alla città e l'anno.");
+		 vettore.add(7,  "/Forecast/città/sogliaErrore -> Per filtrtare le previsioni in basa ad una soglia d'errore in hPa;");
+		 vettore.add(8,	 "/MetaHistorical?city=&data= -> Per conoscere i metadati relativi al meteo del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(9,	 "/Historical?city=&data= -> Per conoscere i dati relativi alla pressione del giorni precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(10, "/Historical/Stat?city=&data= -> Per conoscere le statistiche relative alla pressione del giorno precedente fino ad un massimo di 5 giorni passati(parametri città e data:aaaa/mm/gg);");
+		 vettore.add(11, "/Annate -> Per conoscere le statistiche relative alla pressione degli anni precedenti;");
+		 vettore.add(12, "/Annate/anno) -> Per filtrare gli anni precedenti in base all'anno;");
+		 vettore.add(13, "/Annate/città/anno -> Per filtrare gli anni precedenti in base alla città e l'anno.");
 			 	return vettore;
 				
 	}

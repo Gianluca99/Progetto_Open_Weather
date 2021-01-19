@@ -18,7 +18,7 @@ public class Stats {
 	}
 		
 		
-	public void setValMax(Vector <Integer> v) {
+	public void setValoreMax(Vector <Integer> v) {
 		if(v == null) {
 			throw new IllegalArgumentException();
 		}
@@ -35,13 +35,13 @@ public class Stats {
 
 
 
-	public int getValMax() {
+	public int getValoreMax() {
 		return ValoreMax;
 	}
 
 
 
-	public void setValMin(Vector <Integer> v) {
+	public void setValoreMin(Vector <Integer> v) {
 		if(v == null) {
 			throw new IllegalArgumentException();
 		}
@@ -58,7 +58,7 @@ public class Stats {
 
 
 
-	public int getValMin() {
+	public int getValoreMin() {
 		return ValoreMin;
 	}
 
@@ -83,7 +83,7 @@ public class Stats {
 	}
 
 
-	public void setValQM(Vector <Integer> v) {
+	public void setValoreQM(Vector <Integer> v) {
 		int somma=0;
 		if(v == null) {
 			throw new IllegalArgumentException();
@@ -98,12 +98,12 @@ public class Stats {
 
 
 
-	public double getValQM() {
+	public double getValoreQM() {
 		return ValoreQM;
 	}
 
 
-	public void setVar(Vector <Integer> v) {
+	public void setVarianza(Vector <Integer> v) {
 		int somma=0;
 		if(v == null) {
 			throw new IllegalArgumentException();
@@ -118,8 +118,7 @@ public class Stats {
 	}
 
 
-	public double getVar() {
-		// TODO Auto-generated method stub
+	public double getVarianza() {
 		return Varianza;
 	}
 

@@ -26,10 +26,10 @@ class StatsTest {
 		v.add(1, 1020);
 		S = new Stats();
 		S.setMedia(v);
-		S.setValMax(v);
-		S.setValMin(v);
-		S.setValQM(v);
-		S.setVar(v);
+		S.setValoreMax(v);
+		S.setValoreMin(v);
+		S.setValoreQM(v);
+		S.setVarianza(v);
 	}
 	
 	@AfterEach
@@ -43,10 +43,10 @@ class StatsTest {
 	@Test
 	void test1() {
 		assertEquals(1015, S.getMedia());
-		assertEquals(1020, S.getValMax());
-		assertEquals(1010, S.getValMin());
-		assertEquals(1015.0123151962246, S.getValQM());
-		assertEquals(50.0, S.getVar());
+		assertEquals(1020, S.getValoreMax());
+		assertEquals(1010, S.getValoreMin());
+		assertEquals(1015.0123151962246, S.getValoreQM());
+		assertEquals(50.0, S.getVarianza());
 	}
 	
 	/**
@@ -55,11 +55,11 @@ class StatsTest {
 	
 	@Test
 	void test2() {
-		assertThrows(IllegalArgumentException.class, ()-> S.setValMax(null));
-		assertThrows(IllegalArgumentException.class, ()-> S.setValMin(null));
-		assertThrows(IllegalArgumentException.class, ()-> S.setVar(null));
+		assertThrows(IllegalArgumentException.class, ()-> S.setValoreMax(null));
+		assertThrows(IllegalArgumentException.class, ()-> S.setValoreMin(null));
+		assertThrows(IllegalArgumentException.class, ()-> S.setVarianza(null));
 		assertThrows(IllegalArgumentException.class, ()-> S.setMedia(null));
-		assertThrows(IllegalArgumentException.class, ()-> S.setValQM(null));
+		assertThrows(IllegalArgumentException.class, ()-> S.setValoreQM(null));
 	}
 
 }

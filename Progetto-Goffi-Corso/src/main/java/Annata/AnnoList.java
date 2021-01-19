@@ -2,17 +2,19 @@ package Annata;
 
 import java.util.Arrays;
 import java.util.List;
+
+import it.univpm.ProgettoGoffiCorso.Filters.HistoricalFilters;
+
 import java.util.ArrayList;
 
-public class AnnoList extends Anno{
-	private List<Anno> annateList ;
+public class AnnoList extends HistoricalFilters{
+	
 
 	/**
 	 * @param annateList
 	 */
 	public AnnoList() {
 		super();
-		
 			Gennaio gen = new Gennaio(1025, 1000, 1012.75, 2.2);
 			Febbraio feb = new Febbraio(1025, 1000, 1012.75, 2.2);
 			Marzo mar = new Marzo(1025, 1000, 1012.75, 2.2);
@@ -29,9 +31,7 @@ public class AnnoList extends Anno{
 			annateList = new ArrayList<>(Arrays.asList( 
 													new Anno(2020, "Ancona", mesi),
 													new Anno(2019, "Ancona", mesi),
-													new Anno(2019, "Jesi",   mesi)));
-			
-			
+													new Anno(2019, "Jesi",   mesi)));	
 	}
 	/**
 	 * @return the annateList
@@ -39,19 +39,7 @@ public class AnnoList extends Anno{
 	public List<Anno> getAnnateList() {
 		return annateList;
 	}
-	/**
-	 * Filtra le annate all'interno di annateList in base all'anno e ritorna la prima trovata 
-	 * 
-	 * 
-	 * */
-	public Anno getAnnateList(Integer anno) {
-		return annateList.stream().filter(a -> a.getAnno().equals(anno)).findAny().get();
-		
-	}
-	
-	public Anno getAnnateList(String name, Integer anno) {
-		return annateList.stream().filter(a -> a.getName().equals(name) && a.getAnno().equals(anno)).findAny().get();
-	}
+
 	/**
 	 * @param annateList the annateList to set
 	 */

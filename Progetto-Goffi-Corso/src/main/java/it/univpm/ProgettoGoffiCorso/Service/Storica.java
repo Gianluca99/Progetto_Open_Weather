@@ -43,27 +43,7 @@ public class Storica {
 					+ coord[1] + "&dt=" + dt;
 			String datiStorici = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(API);
 			H = com.google.gson.parsing.HistoricalParsing.parsing(datiStorici);
-			/*System.out.println("\n\nLa pressione storica nella città di " + cityName
-					+ " a partire dall' 01:00 del giorno " + data + " fino a 00:00 del giorno seguente valgono:");
-			
-			 for (int i = 0; i < H.getHourly().size(); i++) { System.out.println("\n " +
-			 H.getHourly().get(i).getPressure()+" hPa"); }
-			 */
-		
-			/*Scanner in = new Scanner(System.in);
-			System.out.println("Città non trovata!\nInserisci una città valida: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setNome(in.nextLine());
-			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome(),
-					it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());*/
-		
-			
-			/*Scanner in = new Scanner(System.in);
-			System.out.println("Data inserita nel formato errato!\nInserisci la data nel formato aaaa/mm/gg: ");
-			it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.setData(in.nextLine());
-			Storico(it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getNome(),
-					it.univpm.ProgettoGoffiCorso.ProgettoGoffiCorsoApplication.vett.getData());*/
-		
-		// ScritturaFileHistorical(cityName, data);
+			ScritturaFileHistorical(cityName, data);
 
 		return H;
 	}

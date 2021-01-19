@@ -11,11 +11,11 @@ public class HistoricalStats extends Stats{
 	public HistoricalStats(String city, String data) throws Exception {
 		super();
 		setV(city, data);
-		super.setValMax(v);
-		super.setValMax(v);
+		super.setValoreMax(v);
+		super.setValoreMax(v);
 		super.setMedia(v);
-		super.setVar(v);
-		super.setValQM(v);
+		super.setVarianza(v);
+		super.setValoreQM(v);
 	}
 
 

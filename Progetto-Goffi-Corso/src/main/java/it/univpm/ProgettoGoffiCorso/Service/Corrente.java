@@ -8,11 +8,11 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 import Current.PressioneAttuale;
 
 public class Corrente {
 	public static String pressioneAttuale = "";
+
 	/**
 	 * metodo in cui chiamando il metodo "chiamataAPI" si crea il collegameneto con
 	 * OpenWeather e si scaricano i dati relativi alla città inserita dall'utente
@@ -26,15 +26,13 @@ public class Corrente {
 	 */
 	public static PressioneAttuale PressioneAttuale(String city) throws Exception {
 		String api = "http://api.openweathermap.org/data/2.5/weather?q=" + city;
-		Scanner in = new Scanner(System.in);
-		PressioneAttuale PA = new PressioneAttuale() ;
-			 pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(api);
-			 PA =com.google.gson.parsing.CurrentParsing.parsing(pressioneAttuale);
+		PressioneAttuale PA = new PressioneAttuale();
+		pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(api);
+		PA = com.google.gson.parsing.CurrentParsing.parsing(pressioneAttuale);
 
-			//ScritturaFileCurrent(city, PA);
+		ScritturaFileCurrent(city, PA);
 		return PA;
 	}
-
 
 	/**
 	 * 
@@ -52,7 +50,8 @@ public class Corrente {
 
 			FileWriter fileWriter = new FileWriter(writer, true);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			bufferedWriter.write("\nLa pressione attuale nella città di " + city + " vale: " +pa.getMain().getPressure() + " hPa\n");
+			bufferedWriter.write("\nLa pressione attuale nella città di " + city + " vale: "
+					+ pa.getMain().getPressure() + " hPa\n");
 			bufferedWriter.close();
 			System.out.println("Pressione aggiunta al file!");
 

@@ -1,18 +1,21 @@
-package it.univpm.ProgettoGoffiCorso.Stats;
+package it.univpm.ProgettoGoffiCorso.Filters;
 
 import java.util.Vector;
 
 import Forecast.ForecastObject;
 
 
-public class Soglia {
+public class RangeFilters {
 	Vector<Integer> v = new Vector<Integer>();
-	public Soglia(int soglia, ForecastObject f) {
+	public RangeFilters(int soglia, ForecastObject f) {
 		v.clear();
-		setFiltro(soglia, f);
+		setForecastFilters(soglia, f);
 	}
 
-	public void setFiltro(int soglia, ForecastObject f) {
+	public void setForecastFilters(int soglia, ForecastObject f) {
+		if(soglia<=0) {
+			throw new IllegalArgumentException(); 
+		}
 		if(soglia == 1) {
 			v.addElement(f.getList().get(7).getMain().getPressure());
 			}
@@ -35,7 +38,7 @@ public class Soglia {
 			v.addElement(f.getList().get(39).getMain().getPressure());
 			}
 	}
-	public Vector <Integer> getFiltro() {
+	public Vector <Integer> getForecastFilters() {
 		return v;
 	}
 }

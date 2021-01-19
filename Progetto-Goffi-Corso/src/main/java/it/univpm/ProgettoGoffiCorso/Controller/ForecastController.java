@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import Forecast.ForecastObject;
+import it.univpm.ProgettoGoffiCorso.Filters.RangeFilters;
 import it.univpm.ProgettoGoffiCorso.Stats.ForecastStats;
-import it.univpm.ProgettoGoffiCorso.Stats.Soglia;
 
 
 @RestController
@@ -49,9 +49,9 @@ public class ForecastController {
 	
 	@RequestMapping("/Forecast/{nome}/{soglia}")
 	@ResponseBody
-	public Soglia filtroSoglia(@PathVariable String nome, @PathVariable int soglia) throws Exception {
+	public RangeFilters filtroSoglia(@PathVariable String nome, @PathVariable int soglia) throws Exception {
 		F = it.univpm.ProgettoGoffiCorso.Service.Prevista.PressioneFutura(nome);
-		Soglia s = new Soglia(soglia, F);
+		RangeFilters s = new RangeFilters(soglia, F);
 		return s;
 	
 	}
@@ -81,5 +81,9 @@ public class ForecastController {
 		else
 			S = "API_Key non inserita";
 		return S;
+	}
+	@ExceptionHandler(IllegalArgumentException.class)
+	public static String ErrorPage(IllegalArgumentException ex) {
+		return "Soglia negativa o uguale a zero, NON VALIDA!";
 	}
 }
