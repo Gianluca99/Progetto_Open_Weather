@@ -11,19 +11,19 @@ import com.google.gson.Gson;
 
 import Current.CurrentObject;
 
-
 public class CurrentParsing {
- public static CurrentObject PA ;
- 
- /** Tramite il gson convertiamo la stringa json in un oggetto Java di tipo CurrentObject
-  *  per poterlo gestire all'interno del programma.
-   * 
-   * @param str --> stringa che contiene il json preso dalla chiamata API.
-   *
-   * @return PA 
-   */
+	public static CurrentObject PA;
+
+	/**
+	 * Tramite il gson convertiamo la stringa json in un oggetto Java di tipo
+	 * CurrentObject per poterlo gestire all'interno del programma.
+	 * 
+	 * @param str --> stringa che contiene il json preso dalla chiamata API.
+	 *
+	 * @return PA
+	 */
 	public static CurrentObject parsing(String str) throws FileNotFoundException {
-		PA= new Gson().fromJson(str, CurrentObject.class);
+		PA = new Gson().fromJson(str, CurrentObject.class);
 		return PA;
 	}
 }

@@ -13,15 +13,15 @@ public class ForecastParsing {
 	public static ForecastObject forecast;
 
 	/**
-	 * Tramite il gson convertiamo la stringa json in un oggetto Java di tipo ForecastObject
-	 *  per poterlo gestire all'interno del programma.
+	 * Tramite il gson convertiamo la stringa json in un oggetto Java di tipo
+	 * ForecastObject per poterlo gestire all'interno del programma.
 	 * 
 	 * @param dati --> stringa che contiene il json preso dalla chiamata API
 	 * 
 	 * @return forecast
 	 */
 	public static ForecastObject parsing(String dati) throws FileNotFoundException {
-		
+
 		forecast = new Gson().fromJson(dati, ForecastObject.class);// Parsing dei dati Json a tipo Forecast//
 
 		return forecast;

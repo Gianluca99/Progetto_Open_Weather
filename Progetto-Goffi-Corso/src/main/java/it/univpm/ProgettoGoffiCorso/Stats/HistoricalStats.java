@@ -8,10 +8,9 @@ package it.univpm.ProgettoGoffiCorso.Stats;
 import java.util.Vector;
 import Historical.HistoricalObject;
 
-public class HistoricalStats extends Stats{
-	private static HistoricalObject H ;
+public class HistoricalStats extends Stats {
+	private static HistoricalObject H;
 	private static Vector<Integer> v = new Vector<Integer>();
-	
 
 	public HistoricalStats(String city, String data) throws Exception {
 		super();
@@ -24,9 +23,13 @@ public class HistoricalStats extends Stats{
 	}
 
 	/**
-	 * Metodo che salva in un vettore v i dati relativi alla pressione storica dall'HistoricalObject.
-	 * Tale vettore verrà poi passato ai metodi della superclasse che genera le statistiche.
+	 * Metodo che salva in un vettore v i dati relativi alla pressione storica
+	 * dall'HistoricalObject. Tale vettore verrà poi passato ai metodi della
+	 * superclasse che genera le statistiche.
+	 * 
 	 * @param city
+	 * @param data
+	 * @return void
 	 * @throws Exception
 	 */
 

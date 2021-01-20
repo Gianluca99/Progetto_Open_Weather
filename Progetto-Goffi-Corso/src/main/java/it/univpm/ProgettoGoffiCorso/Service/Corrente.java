@@ -11,20 +11,19 @@ import java.io.IOException;
 
 import Current.CurrentObject;
 
-
 public class Corrente {
 	public static String pressioneAttuale = "";
 
 	/**
-	 * metodo in cui, chiamando il metodo "chiamataAPI" , si crea il collegameneto con
-	 * OpenWeather e si scaricano i dati relativi alla città inserita dall'utente
-	 *
-	 * i dati vengono convertiti tramite il parsing e scritti come stringhe in un file di testo tale
-	 * operazione viene effettuata dal metodo "ScritturaFile_current"
-	 *
+	 * metodo in cui, chiamando il metodo "chiamataAPI" , si crea il collegamento
+	 * con OpenWeather e si scaricano i dati relativi alla città inserita
+	 * dall'utente i dati vengono convertiti tramite il parsing e scritti come
+	 * stringhe in un file di testo quest'ultima operazione viene effettuata dal
+	 * metodo "ScritturaFile_current"
+	 * 
+	 * @param city
 	 * @return PA --> Oggetto Java contenente i dati
-	 *
-	 * @exception Exception
+	 * @throws Exception
 	 */
 	public static CurrentObject PressioneAttuale(String city) throws Exception {
 		String api = "http://api.openweathermap.org/data/2.5/weather?q=" + city;
@@ -32,15 +31,17 @@ public class Corrente {
 		pressioneAttuale = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(api);
 		PA = com.google.gson.parsing.CurrentParsing.parsing(pressioneAttuale);
 
-		//ScritturaFileCurrent(city, PA);
+		// ScritturaFileCurrent(city, PA);
 		return PA;
 	}
 
 	/**
 	 * Metodo per la scrittura dei dati su un file di testo
+	 * 
+	 * @param city
+	 * @param pa
 	 * @return void
 	 * 
-	 * @exception IOException
 	 */
 	public static void ScritturaFileCurrent(String city, CurrentObject pa) {
 		File writer = new File("DatiAttuali.txt");

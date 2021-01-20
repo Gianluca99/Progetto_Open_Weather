@@ -12,24 +12,23 @@ import Forecast.*;
 
 public class Prevista {
 	public static ForecastObject F;
+
 	/**
 	 * metodo in cui vengono richiamati i metodi per aprire la connessione con API,
 	 * per fare il parsing del file json scaricato e per scrivere su un file di
 	 * testo i dati relativi alle previsioni sulla pressione atmosferica.
 	 * 
-	 * @param città
-	 * 
+	 * @param City
 	 * @return F --> oggetto di tipo ForecastObject
-	 * 
-	 * @exception Exception
+	 * @throws Exception
 	 */
 	public static ForecastObject PressioneFutura(String City) throws Exception {
 		String api = "http://api.openweathermap.org/data/2.5/forecast?q=" + City;
 		String forecast = "";
-		
-			forecast = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(api);
+
+		forecast = it.univpm.ProgettoGoffiCorso.Controller.APIController.chiamataAPI(api);
 		F = com.google.gson.parsing.ForecastParsing.parsing(forecast);
-		//ScritturaFileForecast(City);
+		// ScritturaFileForecast(City);
 		return F;
 	}
 
@@ -37,8 +36,6 @@ public class Prevista {
 	 * Metodo per salvare i dati relativi alle previsioni su un file di testo
 	 * 
 	 * @param City
-	 * 
-	 * @exception IOEXception
 	 * @return void
 	 */
 	public static void ScritturaFileForecast(String City) {
@@ -52,8 +49,8 @@ public class Prevista {
 			FileWriter fileWriter = new FileWriter(writer, true);
 			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 			for (int i = 0; i < F.getList().size(); i++) {
-				bufferedWriter.write("\nLa pressione prevista nella città di " + City + " tra " + ((i + 1) * 3) + " ore vale: "
-						+ F.getList().get(i).getMain().getPressure()+" hPa");
+				bufferedWriter.write("\nLa pressione prevista nella città di " + City + " tra " + ((i + 1) * 3)
+						+ " ore vale: " + F.getList().get(i).getMain().getPressure() + " hPa");
 			}
 			bufferedWriter.close();
 			System.out.println("Previsioni aggiunte al file!");
