@@ -45,6 +45,6 @@ In particolare:<br>
 ![Filters Sequence](https://user-images.githubusercontent.com/76054341/105214906-e278a200-5b50-11eb-8b8a-4b6b0bce1c13.jpg)
 <br>Tale diagramma illustra la gerarchia di chiamate ai metodi che consente di ottenere i dati filtrati relativi alla pressione prevista. Molto simile sarebbe quello riferito  alla pressione storica.<br>
 <b>Richieste web</b>
-![tabella rotte](https://user-images.githubusercontent.com/76054341/105220124-91b87780-5b57-11eb-8bcf-a1ceb20f446f.jpg)
+![image](https://user-images.githubusercontent.com/76054341/105223587-40f74d80-5b5c-11eb-8dc0-8607e12c5210.png)
 <b>Autori</b><br>
 L'applicazione è stata svolta da: Corso Gianluca e Goffi Alessandro.
